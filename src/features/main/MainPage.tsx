@@ -13,6 +13,7 @@ const MainPage = ({ router }: IMainPageProps) => {
       <div>MainPage</div>
         <h1>브랜치 테스트</h1>
       <button onClick={handleRoomButtonClick}>Go to Room</button>
+      <h1>조승혁 바보</h1>
     </>
   );
 };
