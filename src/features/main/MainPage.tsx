@@ -11,6 +11,7 @@ const MainPage = ({ router }: IMainPageProps) => {
   return (
     <>
       <div>MainPage</div>
+        <h1>브랜치 테스트</h1>
       <button onClick={handleRoomButtonClick}>Go to Room</button>
     </>
   );
