@@ -1,0 +1,18 @@
+/*desktop*/
+/*@import screen and (max-width: 1920px);*/
+/*mobile*/
+/*@import screen and (max-width: 480px);*/
+
+/*background-color: FFFCF6;*/
+
+.main_page_body {
+    overflow-x: hidden;
+}
+
+.menu_left {
+    display: flex;
+}
+
+.menu_right {
+    display: flex;
+}
