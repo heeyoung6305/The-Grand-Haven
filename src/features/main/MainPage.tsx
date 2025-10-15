@@ -1,3 +1,4 @@
+import { SERVICE_MENU_DATA } from '@/assets/data';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
 import { IMainPageProps } from '@/types';
@@ -10,6 +11,7 @@ const MainPage = ({ router }: IMainPageProps) => {
     setServiceId(ServiceIdEnum.ROOM);
     router.push('/service');
   };
+  console.log(SERVICE_MENU_DATA);
   return (
     <>
       <div className={styles.main_page_body}>
