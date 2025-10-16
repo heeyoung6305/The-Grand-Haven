@@ -7,12 +7,143 @@
 
 .main_page_body {
     overflow-x: hidden;
+    background-color: #ede9e4;
 }
 
-.menu_left {
-    display: flex;
+/*main font_Albertus Nova*/
+@font-face {
+    font-family: "AlbertusNova";
+    src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+/*en font_Helvetica Neue*/
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+/*ko font_Noto Sans KR*/
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../../assets/fonts/notoSansKR/notosansKR-regular.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
+.header_title {
+    /*font-size: 120px;*/
+    font-size: clamp(40px, 10vw, 120px);         /*반응형에 중요. 기억하기*/
+    font-family: "AlbertusNova";
+    color: #191919;
+    margin-top: 200px;
+    margin-left: 30px;
+}
 .menu_right {
     display: flex;
+    justify-content: flex-end;
+    gap: clamp(20px, 6vw, 55px);
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-family: "notoSansKR";
+    color: #191919;
+    margin-right: clamp(20px, 5vw, 100px);
+    margin-top: clamp(20px, 3vw, 45px);
+}
+.menu_left {
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(20px, 4vw, 55px);         /*반응형에 중요. 기억하기*/
+    font-size: clamp(14px, 2vw, 24px);         /*반응형에 중요. 기억하기*/
+    font-family: "helveticaNeue";
+    color: #9d835a;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.book_btn {
+    color: #fffcf6;
+    background-color: #9d835a;
+    /*width: 90px;*/
+    /*height: 38px;*/
+    width: clamp(70px, 10vw, 90px);         /*반응형에 중요. 기억하기*/
+    height: clamp(30px, 4vw, 38px);         /*반응형에 중요. 기억하기*/
+    margin-left: clamp(-20px, -3vw, -40px);         /*반응형에 중요. 기억하기*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
+}
+.hero_image {
+    width: calc(100% - 60px);
+    height: 781px;
+    margin: 150px auto 30px;
+    background-image: url("../../assets/image/main_img.svg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;         /*기억하기*/
+    position: relative;
+}
+.hero_text {
+    display: flex;
+    justify-content: flex-end;
+}
+.box01 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #313f38;
+    padding: 2vw;
+    gap: 7vw;
+    /*    !*width: 836px;*!*/
+    /*    !*height: 150px;*!*/
+    width: 49vw;
+    height: calc(49vw * 0.182);         /* height / width = 150 / 836 = 0.179 이지만 크기가 살짝 안맞아서 0.182로 수정 */
+    opacity: 0.68;
+}
+.box02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d835a;
+    /*    !*width: 370px;*!*/
+    /*    !*height: 150px;*!*/
+    width: 22vw;
+    height: calc(22vw * 0.405);         /* height / width = 150 / 370 = 0.405 */
+}
+
+.check_btn,
+.guest_btn,
+.search_btn {
+    all: unset;
+    cursor: pointer;
+    font-family: "notoSansKR";
+    color: #fffcf6;
+    text-align: left;
+}
+/*.check_btn {*/
+/*    margin-right: 20px;*/
+/*}*/
+.search_btn {
+    /*font-size: 32px;*/
+    font-size: 1.8vw;
+}
+.check_btn h4,
+.guest_btn h4 {
+    /*font-size: 28px;*/
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+.check_btn h5,
+.guest_btn h5 {
+    /*font-size: 20px;*/
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.about_text {
+    font-family: "notoSansKR";
+    color: #191919;
+    float: left;
 }
