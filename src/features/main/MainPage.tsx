@@ -63,13 +63,10 @@ const MainPage = ({ router }: IMainPageProps) => {
         </section>
         <section className={styles.about}>
           <div className={styles.about_images}>
-            <div className={styles.about_large}>
-              <img src="../../assets/image/hotel_lobby_01.svg" alt="호텔 로비 큰 이미지" />
-            </div>
-            <div className={styles.about_small}>
-              <img src="../../assets/image/hotel_lobby_02.svg" alt="호텔 로비 작은 이미지" />
-            </div>
+            <div className={styles.about_large}></div>
+            <div className={styles.about_small}></div>
           </div>
+          <div className={styles.about_label}></div>
           <div className={styles.about_text}>
             <h2 className={styles.about_title}>
               The
