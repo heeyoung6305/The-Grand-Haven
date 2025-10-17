@@ -3,8 +3,6 @@
 /*mobile*/
 /*@import screen and (max-width: 480px);*/
 
-/*background-color: FFFCF6;*/
-
 .main_page_body {
     overflow-x: hidden;
     background-color: #ede9e4;
@@ -79,12 +77,11 @@
 .hero_image {
     width: calc(100% - 60px);
     height: 781px;
-    margin: 150px auto 30px;
+    margin: 10vw auto 30vw;
     background-image: url("../../assets/image/main_img.svg") ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;         /*기억하기*/
-    position: relative;
 }
 .hero_text {
     display: flex;
@@ -123,9 +120,6 @@
     color: #fffcf6;
     text-align: left;
 }
-/*.check_btn {*/
-/*    margin-right: 20px;*/
-/*}*/
 .search_btn {
     /*font-size: 32px;*/
     font-size: 1.8vw;

@@ -62,16 +62,24 @@ const MainPage = ({ router }: IMainPageProps) => {
           </div>
         </section>
         <section className={styles.about}>
-          <div className={styles.about_content}>
-            <h2>
+          <div className={styles.about_images}>
+            <div className={styles.about_large}>
+              <img src="../../assets/image/hotel_lobby_01.svg" alt="호텔 로비 큰 이미지" />
+            </div>
+            <div className={styles.about_small}>
+              <img src="../../assets/image/hotel_lobby_02.svg" alt="호텔 로비 작은 이미지" />
+            </div>
+          </div>
+          <div className={styles.about_text}>
+            <h2 className={styles.about_title}>
               The
               <br />
               Haven
               <br />
               Experience
             </h2>
-            <h3>특별한 순간의 시작</h3>
-            <p className={styles.about_text}>
+            <h3 className={styles.about_subtitle}>특별한 순간의 시작</h3>
+            <p className={styles.about_description}>
               그랜드 헤이븐은 도심 속에서 진정한 휴식과 감각적인 여유를 제공하는 프리미엄 라이프스타일 호텔입니다.
               현대적인 디자인과 고급스러운 인테리어가 조화를 이루는 객실과 스위트룸은 방문객에게 안락함과 특별한 경험을
               동시에 선사합니다.  저희 호텔은 단순한 숙박을 넘어, 예술과 문화, 미식과 여가를 아우르는 경험을 제공합니다.
