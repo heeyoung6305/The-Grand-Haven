@@ -65,15 +65,13 @@ const MainPage = ({ router }: IMainPageProps) => {
           <div className={styles.about_images}>
             <div className={styles.about_large}></div>
             <div className={styles.about_text}>
-              <div className={styles.about_title01}>
-                <h2>
-                  The
-                  <br />
-                  Haven
-                  <br />
-                  Experience
-                </h2>
-              </div>
+              <h2 className={styles.about_title01}>
+                The
+                <br />
+                Haven
+                <br />
+                Experience
+              </h2>
               <div className={styles.about_title02}>
                 <h3 className={styles.about_subtitle}>특별한 순간의 시작</h3>
                 <p className={styles.about_description}>
@@ -87,6 +85,40 @@ const MainPage = ({ router }: IMainPageProps) => {
               </div>
             </div>
             <div className={styles.about_small}></div>
+          </div>
+        </section>
+        <section className={styles.rooms}>
+          <div>
+            <h1 className={styles.rooms_title}>
+              Premium Rooms
+              <br />& Suites
+            </h1>
+            <p className={styles.rooms_description}>
+              예술적 품격을 갖춘 모던한 디럭스 객실부터 우아한 감성의 스위트 객실과 최고급 럭셔리 풀빌라까지,
+              <br />
+              다양한 객실에서 격이 다른 휴식과 여유를 경험해 보세요.
+            </p>
+          </div>
+          <div className={styles.rooms_reserve}>
+            <div className={styles.rooms_left}>
+              <div className={styles.rooms_left_images}></div>
+              <h2 className={styles.rooms_left_title01}>프리미엄 디럭스</h2>
+              <p className={styles.rooms_left_description01}>
+                한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스
+              </p>
+              {/*<h2 className={styles.rooms_left_title02}>그랜드 디럭스 스위트</h2>*/}
+              {/*<p className={styles.rooms_left_description02}>*/}
+              {/*  클래식한 감성과 이국적인 신비로움이 가득한 그랜드 디럭스 스위트*/}
+              {/*</p>*/}
+              {/*<h2 className={styles.rooms_left_title03}>로열 스위트</h2>*/}
+              {/*<p className={styles.rooms_left_description03}>*/}
+              {/*  감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트*/}
+              {/*</p>*/}
+            </div>
+            <div className={styles.rooms_right}>
+              <div className={styles.rooms_right_images}></div>
+              <button className={styles.reserve_btn}>지금 예약</button>
+            </div>
           </div>
         </section>
         <button onClick={handleRoomButtonClick}>Go to Room</button>

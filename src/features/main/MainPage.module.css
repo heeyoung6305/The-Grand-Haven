@@ -111,7 +111,6 @@
     width: 22vw;
     height: calc(22vw * 0.405);         /* height / width = 150 / 370 = 0.405 */
 }
-
 .check_btn,
 .guest_btn,
 .search_btn {
@@ -137,6 +136,7 @@
     font-size: 1.2vw;
     font-weight: 400;
 }
+
 .about {
     position: relative;
     padding: 150px 30px 0 30px;
@@ -172,17 +172,17 @@
     background-position: center;
 }
 .about_text {
-    margin: 180px 60px 40px 0 ;
+    margin: 180px 80px 40px 0 ;
 }
 .about_title01 {
     font-family: "albertusNova";
     color: #9d835a;
     display: flex;
     text-align: right;
-    letter-spacing: 2px;
-    margin-bottom: 130px;
+    letter-spacing: 4px;
+    margin-bottom: 120px;
     line-height: 1.1;
-    font-size: 60px
+    font-size: 92px
 }
 .about_title02 {
     /*overflow: hidden;*/
@@ -202,4 +202,69 @@
     color: #191919;
     font-size: 18px;
     line-height: 1.6;
+}
+
+.rooms {
+    background-color: #fffcf6;
+    height: 1961px;
+    margin-top: 80px;
+    padding: 300px 30px 0 30px;
+}
+.rooms_title {
+    font-family: "albertusNova";
+    color: #191919;
+    font-size: 165px;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+.rooms_description {
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 150px;
+}
+.rooms_reserve {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.rooms_left_images {
+    background-image: url("../../assets/image/rooms_premium_deluxe01.svg");
+    width: 500px;
+    height: 595px;
+    margin-bottom: 50px;
+}
+.rooms_left_title01, .rooms_left_title02, .rooms_left_title03 {
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.rooms_left_description01, .rooms_left_description02, .rooms_left_description03 {
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 20px;
+}
+.rooms_right_images {
+    background-image: url("../../assets/image/rooms_premium_deluxe02.svg");
+    width: 757px;
+    height: 1000px;
+}
+.reserve_btn {
+    font-family: "notoSansKR";
+    font-size: 25px;
+    color: #fffcf6;
+    background-color: #9d835a;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+.reserve_btn:hover {
+    background-color: #886D42;
 }
