@@ -1,3 +1,4 @@
+import { mainImg } from '@/assets';
 import { SERVICE_MENU_DATA } from '@/assets/data';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
@@ -15,6 +16,8 @@ const MainPage = ({ router }: IMainPageProps) => {
   console.log(SERVICE_MENU_DATA);
   return (
     <>
+      {/* 이미지 태그 사용 예시 */}
+      <img src={mainImg.src} alt={'메인페이지 이미지'} style={{ width: '100%' }} />
       <div className={styles.main_page_body}>
         <header className={styles.header}>
           <nav>
