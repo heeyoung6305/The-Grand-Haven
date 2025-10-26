@@ -1,5 +1,6 @@
 import { roomsArrowButton } from '@/assets';
 import { SERVICE_MENU_DATA } from '@/assets/data';
+import { TGHHeader, TGHMenu } from '@/components';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
 import { IMainPageProps } from '@/types';
@@ -17,32 +18,15 @@ const MainPage = ({ router }: IMainPageProps) => {
   console.log(SERVICE_MENU_DATA);
   return (
     <>
-      {/*/!* 이미지 태그 사용 예시 *!/*/}
+      {/* 이미지 태그 사용 예시 */}
       {/*<img src={mainImg.src} alt={'메인페이지 이미지'} style={{ width: '100%' }} />*/}
-
       <div className={styles.main_page_body}>
         <header>
-          <nav>
-            <ul className={styles.menu_right}>
-              <li>로그인</li>
-              <li>회원가입</li>
-              <li>KR &#9660;</li>
-              <li className={styles.book_btn}>예약하기</li>
-            </ul>
-          </nav>
-          <h1 className={styles.header_title}>The Grand Haven</h1>
-          <nav>
-            <ul className={styles.menu_left}>
-              <li>EXPERIENCE</li>
-              <li>HOTEL</li>
-              <li>DINING</li>
-              <li>ART-TAINMENT</li>
-              <li>GALLERY</li>
-            </ul>
-          </nav>
+          <TGHHeader />
         </header>
-        <section>
-          <div>
+        <TGHMenu />
+        <section className={styles.hero}>
+          <div className={styles.hero_content}>
             <div className={styles.hero_image}>
               <div className={styles.hero_text}>
                 <div className={styles.box01}>
