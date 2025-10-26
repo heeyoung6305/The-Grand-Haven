@@ -248,12 +248,19 @@
     color: #191919;
     font-size: 20px;
 }
+.rooms_arrow_btn {
+    background-image: url("../../assets/image/rooms_arrow_button.svg");
+    width: 170px;
+    height: 170px;
+    /*all: unset;*/
+    /*cursor: pointer;*/
+}
 .rooms_right_images {
     background-image: url("../../assets/image/rooms_premium_deluxe02.svg");
     width: 757px;
     height: 1000px;
 }
-.reserve_btn {
+.rooms_reserve_btn {
     font-family: "notoSansKR";
     font-size: 25px;
     color: #fffcf6;
@@ -263,7 +270,7 @@
     border-radius: 50%;
     position: absolute;
     bottom: 40px;
-    right: 130px;
+    right: 180px;
 }
 .reserve_btn:hover {
     background-color: #886D42;

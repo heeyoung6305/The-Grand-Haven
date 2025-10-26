@@ -114,10 +114,11 @@ const MainPage = ({ router }: IMainPageProps) => {
               {/*<p className={styles.rooms_left_description03}>*/}
               {/*  감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트*/}
               {/*</p>*/}
+              <button className={styles.rooms_arrow_btn}></button>
             </div>
             <div className={styles.rooms_right}>
               <div className={styles.rooms_right_images}></div>
-              <button className={styles.reserve_btn}>지금 예약</button>
+              <button className={styles.rooms_reserve_btn}>지금 예약</button>
             </div>
           </div>
         </section>
