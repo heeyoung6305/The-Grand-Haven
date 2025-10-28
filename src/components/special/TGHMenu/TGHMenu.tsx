@@ -1,6 +1,10 @@
 import { SERVICE_MENU_DATA } from '@/assets/data';
 import styles from '@/features/main/MainPage.module.css';
 
+/**
+ * TGH 서비스 메뉴 컴포넌트
+ * @constructor
+ */
 const TGHMenu = () => (
   <>
     <nav>
