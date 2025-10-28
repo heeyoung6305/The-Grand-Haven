@@ -1,5 +1,4 @@
 import { roomsArrowButton } from '@/assets';
-import { SERVICE_MENU_DATA } from '@/assets/data';
 import { TGHHeader, TGHMenu } from '@/components';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
@@ -15,7 +14,6 @@ const MainPage = ({ router }: IMainPageProps) => {
     setServiceId(ServiceIdEnum.ROOM);
     router.push('/service');
   };
-  console.log(SERVICE_MENU_DATA);
   return (
     <>
       {/* 이미지 태그 사용 예시 */}
