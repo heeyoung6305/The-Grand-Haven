@@ -1,33 +1,24 @@
-import { HeaderMenuEnum } from '@/enums';
-import styles from '@/features/main/MainPage.module.css';
+import { Anchor, Box, Button } from '@mantine/core';
 
-import type { ITGHHeaderMenu } from '@/types';
+import { LANGUAGE_DATA } from '@/assets/data';
+import TGHSelect from '@/components/common/TGHComboBox/TGHComboBox';
+import styles from '@/features/main/MainPage.module.css';
 
 /**
  * TGH 헤더 컴포넌트
  * @constructor
  */
-const TGHHeader = () => {
-  const headerMenuData: ITGHHeaderMenu[] = [
-    { code: HeaderMenuEnum.LOGIN, name: '로그인' },
-    { code: HeaderMenuEnum.SIGN_UP, name: '회원가입' },
-    { code: HeaderMenuEnum.LANGUAGE, name: 'KR ▼' },
-    { code: HeaderMenuEnum.RESERVATION, name: '예약하기', className: styles.book_btn },
-  ];
-  return (
-    <>
-      <nav>
-        <ul className={styles.menu_right}>
-          {headerMenuData.map((menu) => (
-            <li key={menu.code} className={menu.className ?? ''} onClick={() => console.log(menu.name)}>
-              {menu.name}
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <h1 className={styles.header_title}>The Grand Haven</h1>
-    </>
-  );
-};
+const TGHHeader = () => (
+  <>
+    <Box className={styles.menu_right}>
+      {/*<Box className={styles.menu_right}>*/}
+      <Anchor>로그인</Anchor>
+      <Anchor>회원가입</Anchor>
+      <TGHSelect data={LANGUAGE_DATA} />
+      <Button className={styles.book_btn}>예약하기</Button>
+    </Box>
+    <h1 className={styles.header_title}>The Grand Haven</h1>
+  </>
+);
 
 export default TGHHeader;
