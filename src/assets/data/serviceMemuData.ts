@@ -1,5 +1,5 @@
-import { ServiceMenuEnum } from '@/enums';
-import { ITGHMenuNav } from '@/types';
+import { LanguageEnum, ServiceMenuEnum } from '@/enums';
+import { ITGHLanguageData, ITGHMenuNav } from '@/types';
 
 /**
  * 서비스 메뉴 DATA
@@ -12,4 +12,9 @@ const SERVICE_MENU_DATA: ITGHMenuNav[] = [
   { code: ServiceMenuEnum.GALLERY, name: 'GALLERY' },
 ];
 
-export { SERVICE_MENU_DATA };
+const LANGUAGE_DATA: ITGHLanguageData[] = [
+  { value: LanguageEnum.KOREAN, label: 'KR' },
+  { value: LanguageEnum.ENGLISH, label: 'ENG' },
+];
+
+export { SERVICE_MENU_DATA, LANGUAGE_DATA };
