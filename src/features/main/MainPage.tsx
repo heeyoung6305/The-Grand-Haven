@@ -28,9 +28,7 @@ const MainPage = ({ router }: IMainPageProps) => {
       {/* 이미지 태그 사용 예시 */}
       {/*<img src={mainImg.src} alt={'메인페이지 이미지'} style={{ width: '100%' }} />*/}
       <div className={styles.main_page_body}>
-        <header>
-          <TGHHeader />
-        </header>
+        <TGHHeader />
         <TGHMenu />
         <section className={styles.hero}>
           <div className={styles.hero_content}>

@@ -13,4 +13,9 @@ enum ServiceMenuEnum {
   GALLERY = 'GALLERY',
 }
 
-export { HeaderMenuEnum, ServiceMenuEnum };
+enum LanguageEnum {
+  KOREAN = 'KOREAN',
+  ENGLISH = 'ENGLISH',
+}
+
+export { HeaderMenuEnum, ServiceMenuEnum, LanguageEnum };

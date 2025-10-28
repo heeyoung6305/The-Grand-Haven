@@ -1,2 +1,3 @@
 export * from './feature';
-export * from './components';
+export * from './special';
+export * from './common';
