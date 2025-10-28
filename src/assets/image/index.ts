@@ -2,6 +2,8 @@ import aboutLabel from './about_label.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
 import mainImg from './main_img.svg';
+import ourFacilitiesLeft from './our_facilities_left.svg';
+import ourFacilitiesRight from './our_facilities_right.svg';
 import roomsArrowButton from './rooms_arrow_button.svg';
 import roomsGrandDeluxe01 from './rooms_grand_deluxe_suite01.svg';
 import roomsGrandDeluxe02 from './rooms_grand_deluxe_suite02.svg';
@@ -22,4 +24,6 @@ export {
   royalSuite01,
   royalSuite02,
   roomsArrowButton,
+  ourFacilitiesLeft,
+  ourFacilitiesRight,
 };
