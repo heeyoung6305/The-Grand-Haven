@@ -1,4 +1,13 @@
-import { roomsArrowButton } from '@/assets';
+import {
+  hotelLobby01,
+  hotelLobby02,
+  mainImg,
+  ourFacilitiesLeft,
+  ourFacilitiesRight,
+  roomsArrowButton,
+  roomsPremiumDeluxe01,
+  roomsPremiumDeluxe02,
+} from '@/assets';
 import { TGHHeader, TGHMenu } from '@/components';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
@@ -26,6 +35,7 @@ const MainPage = ({ router }: IMainPageProps) => {
         <section className={styles.hero}>
           <div className={styles.hero_content}>
             <div className={styles.hero_image}>
+              <img src={mainImg.src} alt={'메인페이지 이미지'} />
               <div className={styles.hero_text}>
                 <div className={styles.box01}>
                   <button className={styles.check_btn}>
@@ -50,7 +60,9 @@ const MainPage = ({ router }: IMainPageProps) => {
         </section>
         <section className={styles.about}>
           <div className={styles.about_images}>
-            <div className={styles.about_large}></div>
+            <div>
+              <img src={hotelLobby02.src} alt="로비 큰 이미지" />
+            </div>
             <div className={styles.about_text}>
               <h2 className={styles.about_title01}>
                 The
@@ -71,7 +83,9 @@ const MainPage = ({ router }: IMainPageProps) => {
                 </p>
               </div>
             </div>
-            <div className={styles.about_small}></div>
+            <div>
+              <img src={hotelLobby01.src} alt="로비 작은 이미지" />
+            </div>
           </div>
         </section>
         <section className={styles.rooms}>
@@ -87,8 +101,8 @@ const MainPage = ({ router }: IMainPageProps) => {
             </p>
           </div>
           <div className={styles.rooms_reserve}>
-            <div className={styles.rooms_left}>
-              <div className={styles.rooms_left_images}></div>
+            <div>
+              <img src={roomsPremiumDeluxe01.src} alt={'프리미엄디럭스 왼쪽 이미지'} />
               <h2 className={styles.rooms_left_title01}>프리미엄 디럭스</h2>
               <p className={styles.rooms_left_description01}>
                 한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스
@@ -105,10 +119,35 @@ const MainPage = ({ router }: IMainPageProps) => {
                 <img src={roomsArrowButton.src} alt={'rooms 화살표 버튼'} />
               </button>
             </div>
-            <div className={styles.rooms_right}>
-              <div className={styles.rooms_right_images}></div>
+            <div>
+              <img src={roomsPremiumDeluxe02.src} alt={'프리미엄디럭스 오른쪽 이미지'} />
               <button className={styles.rooms_reserve_btn}>지금 예약</button>
             </div>
+          </div>
+        </section>
+        <section className={styles.our_facilities}>
+          <div>
+            <div className={styles.our_facilities_images}>
+              <img src={ourFacilitiesLeft.src} alt={'시설 왼쪽 이미지'} />
+              <div>
+                <h1 className={styles.our_facilities_title}>
+                  Our
+                  <br />
+                  Faci
+                  <br />
+                  <span className={styles.lities}>Lities</span>
+                </h1>
+                <p className={styles.our_facilities_description}>
+                  다채로운 액티비티와 여유로운 휴식이 공존하는
+                  <br />
+                  그랜드 헤이븐의 특별한 시설을 즐겨보세요.
+                </p>
+              </div>
+              <img src={ourFacilitiesRight.src} alt={'시설 오른쪽 이미지'} />
+            </div>
+          </div>
+          <div>
+            <div></div>
           </div>
         </section>
         <button onClick={handleRoomButtonClick}>Go to Room</button>
