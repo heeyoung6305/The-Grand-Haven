@@ -1,0 +1,14 @@
+.menu_flex {
+  width: 100%;
+  padding: 0 30px;
+  flex-direction: row;
+  gap: 55px;
+}
+
+.menu_list {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "helveticaNeue";
+  color: #9d835a;
+}

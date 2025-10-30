@@ -1,0 +1,42 @@
+.tgh_header_flex {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+.tgh_header_menu_btn {
+  background-color: transparent;
+  color: #191919;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+
+  &:hover {
+    background-color: transparent;
+    color: #191919;
+  }
+}
+
+.reserve_btn {
+  color: #fffcf6;
+  background-color: #9d835a;
+  width: 90px;
+  height: 38px;
+
+  &:hover {
+    color: #fffcf6;
+    background-color: #9d835a;
+  }
+}
+
+.header_title {
+  width: 100%;
+  max-width: 967px;
+  max-height: 200px;
+  font-size: 120px;
+  font-weight: 400;
+  font-family: "AlbertusNova";
+  line-height: 200px;
+  color: #191919;
+}

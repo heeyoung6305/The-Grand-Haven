@@ -2,8 +2,7 @@ import { ReactNode } from 'react';
 
 import type { Metadata } from 'next';
 
-import './globals.css';
-
+import '@mantine/core/styles.css';
 import { MainStoreProvider, UIProvider } from '@/providers';
 
 export const metadata: Metadata = {
@@ -25,6 +24,40 @@ const RootLayout = ({
 }>) => (
   <html lang="ko">
     <head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function() {
+            function setViewPort() {
+              const targetWidth = 1440;
+              const deviceWidth = window.outerWidth;
+              const deviceHeight = window.outerHeight;
+              const isPortrait = false;
+
+              const effectiveWidth = isPortrait ? deviceHeight : deviceWidth;
+              let scale = effectiveWidth < targetWidth ? effectiveWidth / targetWidth : 1;
+              scale = Math.floor(scale * 1000) / 1000;
+
+              const viewportMeta = document.querySelector('meta[name="viewport"]');
+              const metaContent = \`width=\${targetWidth}, initial-scale=\${scale}, viewport-fit=cover, minimum-scale=\${scale}\`;
+
+              if (viewportMeta) {
+                viewportMeta.content = metaContent;
+              }
+            }
+
+            // 초기 로드 시
+            window.addEventListener('DOMContentLoaded', setViewPort);
+            
+            // 리사이즈 시
+            window.addEventListener('resize', setViewPort);
+            
+            // 페이지 전환 후
+            document.addEventListener('next:route-change-complete', setViewPort);
+          })();
+        `,
+        }}
+      />
       <title />
     </head>
     <body>
