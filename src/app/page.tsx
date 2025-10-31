@@ -1,15 +1,22 @@
 'use client';
+import { Box, Container } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 
+import { TGHHeader, TGHMenu } from '@/components';
 import { MainPage } from '@/features';
 
+import styles from './page.module.css';
+
 const Home = () => {
-  console.log('메인페이지');
   const router = useRouter();
   return (
-    <>
-      <MainPage router={router} />
-    </>
+    <Box className={styles.root_page_box}>
+      <TGHHeader />
+      <TGHMenu />
+      <Container w={1014} px={30} p={0} m={'auto'}>
+        <MainPage router={router} />
+      </Container>
+    </Box>
   );
 };
 

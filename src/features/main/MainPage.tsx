@@ -1,3 +1,8 @@
+import { IMainPageProps } from '@/types';
+
+import styles from './MainPage.module.css';
+
+import './reset.css';
 import {
   GrandLounge,
   hotelLobby01,
@@ -12,14 +17,9 @@ import {
   TheArtofDining,
   WineBarReserve,
 } from '@/assets';
-import { TGHHeader, TGHMenu } from '@/components';
-import { ServiceIdEnum } from '@/enums';
+
 import { useMainStore } from '@/providers';
-import { IMainPageProps } from '@/types';
-
-import styles from './MainPage.module.css';
-
-import './reset.css';
+import { ServiceIdEnum } from '@/enums';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);
@@ -32,8 +32,6 @@ const MainPage = ({ router }: IMainPageProps) => {
       {/* 이미지 태그 사용 예시 */}
       {/*<img src={mainImg.src} alt={'메인페이지 이미지'} style={{ width: '100%' }} />*/}
       <div className={styles.main_page_body}>
-        <TGHHeader />
-        <TGHMenu />
         <section className={styles.hero}>
           <div className={styles.hero_content}>
             <div className={styles.hero_image}>
