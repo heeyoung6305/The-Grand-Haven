@@ -19,10 +19,10 @@
 }
 
 .reserve_btn {
-  color: #fffcf6;
-  background-color: #9d835a;
   width: 90px;
   height: 38px;
+  color: #fffcf6;
+  background-color: #9d835a;
 
   &:hover {
     color: #fffcf6;
