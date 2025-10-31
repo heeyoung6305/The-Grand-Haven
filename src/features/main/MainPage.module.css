@@ -4,319 +4,304 @@
 /*@import (max-width: 480px);*/
 
 .main_page_body {
-  /*overflow-x: hidden;*/
-  background-color: #ede9e4;
+    overflow-x: hidden;
+    background-color: #ede9e4;
 }
 
 /*main font_Albertus Nova*/
 @font-face {
-  font-family: "AlbertusNova";
-  src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "AlbertusNova";
+    src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
-
 /*en font_Helvetica Neue*/
 @font-face {
-  font-family: "HelveticaNeue";
-  src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
+    font-weight: normal;
+    font-style: normal;
 }
-
 /*ko font_Noto Sans KR*/
 @font-face {
-  font-family: "NotoSansKR";
-  src: url("../../assets/fonts/notoSansKR/notosansKR-regular.ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "NotoSansKR";
+    src: url("../../assets/fonts/notoSansKR/notosansKR-regular.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .header_title {
-  /*font-size: 120px;*/
-  font-size: clamp(40px, 10vw, 120px); /*반응형에 중요. 기억하기*/
-  font-family: "AlbertusNova";
-  color: #191919;
-  margin-top: 200px;
-  margin-left: 30px;
+    /*font-size: 120px;*/
+    font-size: clamp(40px, 10vw, 120px);         /*반응형에 중요. 기억하기*/
+    font-family: "AlbertusNova";
+    color: #191919;
+    margin-top: 200px;
+    margin-left: 30px;
 }
-
 .menu_right {
-  display: flex;
-  justify-content: flex-end;
-  gap: clamp(20px, 6vw, 55px);
-  font-size: clamp(12px, 1.5vw, 14px);
-  font-family: "notoSansKR";
-  color: #191919;
-  margin-right: clamp(20px, 5vw, 100px);
-  margin-top: clamp(20px, 3vw, 45px);
+    display: flex;
+    justify-content: flex-end;
+    gap: clamp(20px, 6vw, 55px);
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-family: "notoSansKR";
+    color: #191919;
+    margin-right: clamp(20px, 5vw, 100px);
+    margin-top: clamp(20px, 3vw, 45px);
 }
-
 .menu_left {
-  display: flex;
-  justify-content: flex-start;
-  gap: clamp(20px, 4vw, 55px); /*반응형에 중요. 기억하기*/
-  font-size: clamp(14px, 2vw, 24px); /*반응형에 중요. 기억하기*/
-  font-family: "helveticaNeue";
-  color: #9d835a;
-  margin-left: 30px;
-  margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(20px, 4vw, 55px);         /*반응형에 중요. 기억하기*/
+    font-size: clamp(14px, 2vw, 24px);         /*반응형에 중요. 기억하기*/
+    font-family: "helveticaNeue";
+    color: #9d835a;
+    margin-left: 30px;
+    margin-top: 30px;
 }
-
 .book_btn {
-  color: #fffcf6;
-  background-color: #9d835a;
-  /*width: 90px;*/
-  /*height: 38px;*/
-  width: clamp(70px, 10vw, 90px); /*반응형에 중요. 기억하기*/
-  height: clamp(30px, 4vw, 38px); /*반응형에 중요. 기억하기*/
-  margin-left: clamp(-20px, -3vw, -40px); /*반응형에 중요. 기억하기*/
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 50%;
-  transform: translateY(-20%);
+    color: #fffcf6;
+    background-color: #9d835a;
+    /*width: 90px;*/
+    /*height: 38px;*/
+    width: clamp(70px, 10vw, 90px);         /*반응형에 중요. 기억하기*/
+    height: clamp(30px, 4vw, 38px);         /*반응형에 중요. 기억하기*/
+    margin-left: clamp(-20px, -3vw, -40px);         /*반응형에 중요. 기억하기*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
 }
-
 .hero_image {
-  position: relative;
-  width: calc(100% - 60px);
-  margin: 10vw auto;
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 10vw auto;
 }
-
 .hero_text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
 }
-
 .box01 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #313f38;
-  padding: 2vw;
-  gap: 7vw;
-  /*    !*width: 836px;*!*/
-  /*    !*height: 150px;*!*/
-  width: 49vw;
-  height: calc(49vw * 0.182); /* height / width = 150 / 836 = 0.179 이지만 크기가 살짝 안맞아서 0.182로 수정 */
-  opacity: 0.68;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #313f38;
+    padding: 2vw;
+    gap: 7vw;
+    /*    !*width: 836px;*!*/
+    /*    !*height: 150px;*!*/
+    width: 49vw;
+    height: calc(49vw * 0.182);         /* height / width = 150 / 836 = 0.179 이지만 크기가 살짝 안맞아서 0.182로 수정 */
+    opacity: 0.68;
 }
-
 .box02 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9d835a;
-  /*    !*width: 370px;*!*/
-  /*    !*height: 150px;*!*/
-  width: 22vw;
-  height: calc(22vw * 0.405); /* height / width = 150 / 370 = 0.405 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d835a;
+    /*    !*width: 370px;*!*/
+    /*    !*height: 150px;*!*/
+    width: 22vw;
+    height: calc(22vw * 0.405);         /* height / width = 150 / 370 = 0.405 */
 }
-
 .check_btn,
 .guest_btn,
 .search_btn {
-  all: unset;
-  cursor: pointer;
-  font-family: "notoSansKR";
-  color: #fffcf6;
-  text-align: left;
+    all: unset;
+    cursor: pointer;
+    font-family: "notoSansKR";
+    color: #fffcf6;
+    text-align: left;
 }
-
 .search_btn {
-  /*font-size: 32px;*/
-  font-size: 1.8vw;
+    /*font-size: 32px;*/
+    font-size: 1.8vw;
 }
-
 .check_btn h4,
 .guest_btn h4 {
-  /*font-size: 28px;*/
-  font-size: 1.6vw;
-  font-weight: 600;
+    /*font-size: 28px;*/
+    font-size: 1.6vw;
+    font-weight: 600;
 }
-
 .check_btn h5,
 .guest_btn h5 {
-  /*font-size: 20px;*/
-  font-size: 1.2vw;
-  font-weight: 400;
+    /*font-size: 20px;*/
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 
 .about {
-  position: relative;
-  padding: 150px 30px 0 30px;
+    position: relative;
+    padding: 150px 30px 0 30px;
 }
-
 .about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 30px;
-  right: 30px;
-  height: 1300px;
-  background: url("../../assets/image/about_label.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0; left: 30px; right: 30px;
+    height: 1300px;
+    background: url("../../assets/image/about_label.svg") ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
 }
-
 .about_images {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
 }
-
 .about_text {
-  margin: 180px 80px 40px 0;
+    margin: 180px 80px 40px 0 ;
 }
-
 .about_title01 {
-  font-family: "albertusNova";
-  color: #9d835a;
-  display: flex;
-  text-align: right;
-  letter-spacing: 4px;
-  margin-bottom: 120px;
-  line-height: 1.1;
-  font-size: 92px
+    font-family: "albertusNova";
+    color: #9d835a;
+    display: flex;
+    text-align: right;
+    letter-spacing: 4px;
+    margin-bottom: 120px;
+    line-height: 1.1;
+    font-size: 92px
 }
-
 .about_title02 {
-  /*overflow: hidden;*/
-  width: 420px;
-  display: flex;
-  flex-direction: column;
+    /*overflow: hidden;*/
+    width: 420px;
+    display: flex;
+    flex-direction: column;
 }
-
 .about_subtitle {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 48px;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
 }
-
 .about_description {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 18px;
-  line-height: 1.6;
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .rooms {
-  background-color: #fffcf6;
-  height: 1961px;
-  margin-top: 80px;
-  padding: 300px 30px 0 30px;
+    background-color: #fffcf6;
+    height: 1961px;
+    margin-top: 80px;
+    padding: 300px 30px 0 30px;
 }
-
 .rooms_title {
-  font-family: "albertusNova";
-  color: #191919;
-  font-size: 165px;
-  letter-spacing: 4px;
-  line-height: 1.1;
-  margin-bottom: 40px;
+    font-family: "albertusNova";
+    color: #191919;
+    font-size: 148px;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 40px;
 }
-
 .rooms_description {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 30px;
-  line-height: 1.2;
-  margin-bottom: 150px;
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 150px;
 }
-
 .rooms_reserve {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
 }
-
 .rooms_left_title01, .rooms_left_title02, .rooms_left_title03 {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 40px;
-  letter-spacing: 3px;
-  margin: 50px 0 30px 0;
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 50px 0 30px 0;
 }
-
 .rooms_left_description01, .rooms_left_description02, .rooms_left_description03 {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 20px;
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 20px;
 }
-
 .rooms_arrow_btn {
-  all: unset;
-  cursor: pointer;
-  position: relative;
-  left: -65px;
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    left: -65px;
 }
-
 .rooms_reserve_btn {
-  font-family: "notoSansKR";
-  font-size: 25px;
-  color: #fffcf6;
-  background-color: #9d835a;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 40px;
-  right: 180px;
+    font-family: "notoSansKR";
+    font-size: 25px;
+    color: #fffcf6;
+    background-color: #9d835a;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 180px;
 }
-
 .reserve_btn:hover {
-  background-color: #886D42;
+    background-color: #886D42;
 }
 
 .our_facilities {
-  background-color: #fffcf6;
-  height: 3152px;
-  position: relative;
-  padding: 300px 30px 0 30px;
+    background-color: #fffcf6;
+    height: 3152px;
+    position: relative;
+    padding: 250px 30px 0 30px;
 }
-
 .our_facilities::before {
-  content: "";
-  position: absolute;
-  top: 195px;
-  left: 30px;
-  right: 30px;
-  height: 600px;
-  background: url("../../assets/image/our_facilities_label.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
+    content: "";
+    position: absolute;
+    top: 113px; left: 30px; right: 30px;
+    height: 600px;
+    background: url("../../assets/image/our_facilities_label.svg") ;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
-
 .our_facilities_images {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-
 .our_facilities_title {
-  font-family: "albertusNova";
-  color: #191919;
-  font-size: 165px;
-  letter-spacing: 4px;
-  line-height: 1.1;
-  margin-bottom: 100px;
+    font-family: "albertusNova";
+    color: #191919;
+    font-size: 148px;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 100px;
 }
-
 .lities {
-  margin-left: 330px;
+    margin-left: 300px;
+}
+.our_facilities_description {
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
-.our_facilities_description {
-  font-family: "notoSansKR";
-  color: #191919;
-  font-size: 24px;
-  line-height: 1.2;
+.safet_comfort {
+    position: relative;
+}
+.safet_comfort_title {
+    font-family: "albertusNova";
+    color: #fffcf6;
+    font-size: 148px;
+    letter-spacing: 4px;
+    line-height: 1.3;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+}
+.safet_comfort_description {
+    font-family: "notoSansKR";
+    color: #191919;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 30px 0 0 30px;
+    /*margin-bottom: 150px;*/
 }
