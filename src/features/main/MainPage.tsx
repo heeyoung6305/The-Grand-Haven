@@ -2,7 +2,6 @@ import {
   GrandLounge,
   hotelLobby01,
   hotelLobby02,
-  mainImg,
   ourFacilitiesLeft,
   ourFacilitiesRight,
   roomsArrowButton,
@@ -12,6 +11,7 @@ import {
   TheArtOfDining,
   WineBarReserve,
 } from '@/assets';
+import { TGHMainSearch } from '@/components';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
 
@@ -34,28 +34,29 @@ const MainPage = ({ router }: IMainPageProps) => {
       <div className={styles.main_page_body}>
         <section className={styles.hero}>
           <div className={styles.hero_content}>
-            <div className={styles.hero_image}>
-              <img src={mainImg.src} alt={'메인페이지 이미지'} />
-              <div className={styles.hero_text}>
-                <div className={styles.box01}>
-                  <button className={styles.check_btn}>
-                    <h5>체크인 / 체크아웃</h5>
-                    <br />
-                    <h4>2025. 11. 01 - 2025. 11. 02</h4>
-                  </button>
-                  <button className={styles.guest_btn}>
-                    <h5>객실 및 인원</h5>
-                    <br />
-                    <h4>객실 1개, 투수객 1인 &#9660;</h4>
-                  </button>
-                </div>
-                <div className={styles.box02}>
-                  <button className={styles.search_btn}>
-                    <h4>상품 검색</h4>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <TGHMainSearch />
+            {/*<div className={styles.hero_image}>*/}
+            {/*  <img src={mainImg.src} alt={'메인페이지 이미지'} />*/}
+            {/*  <div className={styles.hero_text}>*/}
+            {/*    <div className={styles.box01}>*/}
+            {/*      <button className={styles.check_btn}>*/}
+            {/*        <h5>체크인 / 체크아웃</h5>*/}
+            {/*        <br />*/}
+            {/*        <h4>2025. 11. 01 - 2025. 11. 02</h4>*/}
+            {/*      </button>*/}
+            {/*      <button className={styles.guest_btn}>*/}
+            {/*        <h5>객실 및 인원</h5>*/}
+            {/*        <br />*/}
+            {/*        <h4>객실 1개, 투수객 1인 &#9660;</h4>*/}
+            {/*      </button>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.box02}>*/}
+            {/*      <button className={styles.search_btn}>*/}
+            {/*        <h4>상품 검색</h4>*/}
+            {/*      </button>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         </section>
         <section className={styles.about}>
