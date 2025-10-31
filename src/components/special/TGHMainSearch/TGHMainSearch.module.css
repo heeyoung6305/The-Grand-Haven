@@ -1,0 +1,20 @@
+.tgh_main_search_flex {
+  height: 150px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tgh_main_search_btn {
+  width: 370px;
+  height: 150px;
+  color: #fffcf6;
+  background-color: #9d835a;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 20px;
+
+  &:hover {
+    color: #fffcf6;
+    background-color: #9d835a;
+  }
+}
