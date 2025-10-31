@@ -1,6 +1,18 @@
-.tgh_main_search_flex {
-  height: 150px;
+.tgh_main_search_background_img {
+  height: 781px;
+  display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 143px;
+}
+
+.tgh_main_search_background_img_flex {
+  width: 836px;
+  height: 150px;
+  background-color: #313F387A;
+  backdrop-filter: blur(10px);
+  opacity: 90%;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -12,9 +24,17 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 20px;
+  border-radius: 0;
 
   &:hover {
     color: #fffcf6;
     background-color: #9d835a;
   }
+}
+
+.tgh_main_search_divider {
+  height: 95px;
+  background-color: #fffcf6;
+  align-self: center;
+  opacity: 24%;
 }
