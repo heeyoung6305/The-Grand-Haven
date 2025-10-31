@@ -2,8 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
-    "plugin:import/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    // the following lines do the trick
+    "plugin:import/typescript",
+    "plugin:react-hooks/recommended-legacy"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -22,18 +24,20 @@
     },
     "import/resolver": {
       "typescript": {
-        "alwaysTryTypes": true
-      }
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      },
+      "node": true
     }
   },
   "ignorePatterns": [
-    "postcss.config.mjs",
-    "server.js"
+    "postcss.config.mjs"
   ],
   "plugins": [
     "import",
     "prettier",
-    "unused-imports"
+    "unused-imports",
+    "react-hooks"
   ],
   //* "prettier" plugin should be last in order, In case if you are adding any other plugins
   "rules": {
@@ -194,6 +198,16 @@
           },
           {
             "pattern": "{@vercel*, @vercel*/**}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{@testing-library*, @testing-library*/**}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{@mantine*, @mantine*/**}",
             "group": "external",
             "position": "before"
           },
