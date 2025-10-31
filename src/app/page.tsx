@@ -2,18 +2,19 @@
 import { Box, Container } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 
-import { TGHHeader, TGHMenu } from '@/components';
+import { TGHHeader, TGHServiceMenu } from '@/components';
 import { MainPage } from '@/features';
 
 import styles from './page.module.css';
 
 const Home = () => {
   const router = useRouter();
+
   return (
     <Box className={styles.root_page_box}>
       <TGHHeader />
-      <TGHMenu />
-      <Container w={1014} px={30} p={0} m={'auto'}>
+      <TGHServiceMenu />
+      <Container size={1920} px={30} p={0}>
         <MainPage router={router} />
       </Container>
     </Box>

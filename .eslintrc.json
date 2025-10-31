@@ -4,8 +4,7 @@
     "next/typescript",
     "plugin:prettier/recommended",
     // the following lines do the trick
-    "plugin:import/typescript",
-    "plugin:react-hooks/recommended-legacy"
+    "plugin:import/typescript"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -36,8 +35,7 @@
   "plugins": [
     "import",
     "prettier",
-    "unused-imports",
-    "react-hooks"
+    "unused-imports"
   ],
   //* "prettier" plugin should be last in order, In case if you are adding any other plugins
   "rules": {
@@ -165,8 +163,6 @@
         ]
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/comma-dangle": [
       "off"
     ],

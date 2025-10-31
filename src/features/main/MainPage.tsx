@@ -1,8 +1,3 @@
-import { IMainPageProps } from '@/types';
-
-import styles from './MainPage.module.css';
-
-import './reset.css';
 import {
   GrandLounge,
   hotelLobby01,
@@ -17,9 +12,14 @@ import {
   TheArtofDining,
   WineBarReserve,
 } from '@/assets';
-
-import { useMainStore } from '@/providers';
 import { ServiceIdEnum } from '@/enums';
+import { useMainStore } from '@/providers';
+
+import type { IMainPageProps } from '@/types';
+
+import styles from './MainPage.module.css';
+
+import './reset.css';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);

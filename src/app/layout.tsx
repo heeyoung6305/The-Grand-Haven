@@ -29,7 +29,7 @@ const RootLayout = ({
           __html: `
           (function() {
             function setViewPort() {
-              const targetWidth = 1440;
+              const targetWidth = 1920;
               const deviceWidth = window.outerWidth;
               const deviceHeight = window.outerHeight;
               const isPortrait = false;

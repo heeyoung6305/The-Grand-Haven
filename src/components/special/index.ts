@@ -1,2 +1,3 @@
 export * from './TGHHeader';
-export * from './TGHMenu';
+export * from './TGHServiceMenu';
+export * from './TGHMainSearch';
