@@ -13,7 +13,7 @@ import roomsPremiumDeluxe02 from './rooms_premium_deluxe02.svg';
 import royalSuite01 from './rooms_royal_suite01.svg';
 import royalSuite02 from './rooms_royal_suite02.svg';
 import safetComfort from './safet_comfort.svg';
-import TheArtofDining from './The_Art_of_Dining.svg';
+import TheArtOfDining from './The_Art_Of_Dining.svg';
 import WineBarReserve from './Wine_Bar_Reserve.svg';
 
 export {
@@ -30,7 +30,7 @@ export {
   roomsArrowButton,
   ourFacilitiesLeft,
   ourFacilitiesRight,
-  TheArtofDining,
+  TheArtOfDining,
   GrandLounge,
   WineBarReserve,
   safetComfort,

@@ -12,23 +12,17 @@
 @font-face {
     font-family: "AlbertusNova";
     src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
-    font-weight: normal;
-    font-style: normal;
 }
 /*en font_Helvetica Neue*/
 @font-face {
     font-family: "HelveticaNeue";
     src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
-    font-weight: normal;
-    font-style: normal;
 }
+
+/*en font_Crimson Text*/
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 /*ko font_Noto Sans KR*/
-@font-face {
-    font-family: "NotoSansKR";
-    src: url("../../assets/fonts/notoSansKR/notosansKR-regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
 .header_title {
     /*font-size: 120px;*/
@@ -43,7 +37,8 @@
     justify-content: flex-end;
     gap: clamp(20px, 6vw, 55px);
     font-size: clamp(12px, 1.5vw, 14px);
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
     margin-right: clamp(20px, 5vw, 100px);
     margin-top: clamp(20px, 3vw, 45px);
@@ -113,7 +108,8 @@
 .search_btn {
     all: unset;
     cursor: pointer;
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #fffcf6;
     text-align: left;
 }
@@ -169,22 +165,25 @@
 }
 .about_title02 {
     /*overflow: hidden;*/
-    width: 420px;
+    width: 400px;
     display: flex;
     flex-direction: column;
 }
 .about_subtitle {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
     color: #191919;
-    font-size: 48px;
+    font-size: 50px;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
 .about_description {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
     font-size: 18px;
     line-height: 1.6;
+    opacity: 64%;
 }
 
 .rooms {
@@ -202,9 +201,10 @@
     margin-bottom: 40px;
 }
 .rooms_description {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
-    font-size: 27px;
+    font-size: 28px;
     line-height: 1.2;
     margin-bottom: 150px;
 }
@@ -214,16 +214,19 @@
     position: relative;
 }
 .rooms_left_title01, .rooms_left_title02, .rooms_left_title03 {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
     color: #191919;
     font-size: 40px;
     letter-spacing: 3px;
     margin: 50px 0 30px 0;
 }
 .rooms_left_description01, .rooms_left_description02, .rooms_left_description03 {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
     font-size: 20px;
+    opacity: 80%;
 }
 .rooms_arrow_btn {
     all: unset;
@@ -232,7 +235,8 @@
     left: -65px;
 }
 .rooms_reserve_btn {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
     font-size: 25px;
     color: #fffcf6;
     background-color: #9d835a;
@@ -266,6 +270,9 @@
     display: flex;
     justify-content: space-between;
 }
+.our_facilities_left {
+    transform: translateY(290px);
+}
 .our_facilities_title {
     font-family: "albertusNova";
     color: #191919;
@@ -278,10 +285,45 @@
     margin-left: 300px;
 }
 .our_facilities_description {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 22px;
+    line-height: 1.2;
+    opacity: 80%;
+}
+.our_facilities01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 300px 0 100px 470px;
+}
+.our_facilities_title01 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.our_facilities_description01 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
     font-size: 20px;
-    line-height: 1.2;
+    opacity: 80%;
+}
+.our_facilities02, .our_facilities03 {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+.our_facilities_title02, .our_facilities_title03 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 80px;
+    letter-spacing: 2px;
 }
 
 .safet_comfort {
@@ -298,7 +340,8 @@
     left: 30px;
 }
 .safet_comfort_description {
-    font-family: "notoSansKR";
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     color: #191919;
     font-size: 32px;
     line-height: 1.2;

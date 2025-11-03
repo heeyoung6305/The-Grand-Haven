@@ -1,0 +1,31 @@
+.about_title01 {
+    font-family: "albertusNova";
+    color: #9d835a;
+    display: flex;
+    text-align: right;
+    letter-spacing: 4px;
+    margin-bottom: 120px;
+    line-height: 1.1;
+    font-size: 92px
+}
+.about_title02 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.about_subtitle {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    color: #191919;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.about_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 64%;
+}
