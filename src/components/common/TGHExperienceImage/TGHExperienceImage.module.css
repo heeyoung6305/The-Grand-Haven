@@ -1,0 +1,9 @@
+.about_background_img {
+    height: 1300px;
+    padding-top: 150px;
+}
+.about_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
