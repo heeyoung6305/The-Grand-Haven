@@ -1,8 +1,5 @@
-import { BackgroundImage } from '@mantine/core';
-
 import {
   GrandLounge,
-  hotelLobby02,
   ourFacilitiesLeft,
   ourFacilitiesRight,
   roomsArrowButton,
@@ -12,7 +9,6 @@ import {
   TheArtOfDining,
   WineBarReserve,
 } from '@/assets';
-import { TGHMainSearch } from '@/components';
 import { ServiceIdEnum } from '@/enums';
 import { useMainStore } from '@/providers';
 
@@ -21,6 +17,7 @@ import type { IMainPageProps } from '@/types';
 import styles from './MainPage.module.css';
 
 import './reset.css';
+import TGHExperienceImage from '@/components/common/TGHExperienceImage/TGHExperienceImage';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);
@@ -35,7 +32,7 @@ const MainPage = ({ router }: IMainPageProps) => {
       <div className={styles.main_page_body}>
         <section className={styles.hero}>
           <div className={styles.hero_content}>
-            <TGHMainSearch />
+            {/*<TGHMainSearch />*/}
             {/*<div className={styles.hero_image}>*/}
             {/*  <img src={mainImg.src} alt={'메인페이지 이미지'} />*/}
             {/*  <div className={styles.hero_text}>*/}
@@ -60,8 +57,9 @@ const MainPage = ({ router }: IMainPageProps) => {
             {/*</div>*/}
           </div>
         </section>
-        <section className={styles.about}>
-          <BackgroundImage src={hotelLobby02.src} />
+        <section>
+          <TGHExperienceImage />
+          {/*<BackgroundImage src={aboutLabel.src} />*/}
           {/*<div className={styles.about_images}>*/}
           {/*  <div>*/}
           {/*    <img src={hotelLobby02.src} alt="로비 큰 이미지" />*/}
