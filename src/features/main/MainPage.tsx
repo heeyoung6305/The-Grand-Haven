@@ -1,3 +1,5 @@
+import { BackgroundImage } from '@mantine/core';
+
 import {
   GrandLounge,
   hotelLobby02,
@@ -19,7 +21,6 @@ import type { IMainPageProps } from '@/types';
 import styles from './MainPage.module.css';
 
 import './reset.css';
-import { BackgroundImage } from '@mantine/core';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);

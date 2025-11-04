@@ -1,5 +1,5 @@
-import type { ComboboxProps } from '@mantine/core';
 import type { ITGHStyleProps } from '@/types';
+import type { ComboboxProps } from '@mantine/core';
 
 export interface ITGHComboBox extends ComboboxProps, ITGHStyleProps {
   data: IComboboxData[];
