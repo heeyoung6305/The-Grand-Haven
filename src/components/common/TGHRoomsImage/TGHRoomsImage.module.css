@@ -1,0 +1,26 @@
+.rooms_reserve {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+.rooms_background_img{
+    width: 757px;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 50px 50px 0;
+}
+.rooms_reserve_btn {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fffcf6;
+    background-color: #9d835a;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.rooms_reserve_btn:hover {
+    background-color: #886D42;
+}
