@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 import '@mantine/core/styles.css';
+import '@mantine/dates/styles.css';
 import { MainStoreProvider, UIProvider } from '@/providers';
 
 export const metadata: Metadata = {

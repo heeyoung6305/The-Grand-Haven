@@ -18,6 +18,7 @@ import styles from './MainPage.module.css';
 
 import './reset.css';
 import TGHExperienceImage from '@/components/common/TGHExperienceImage/TGHExperienceImage';
+import { TGHMainSearch } from '@/components';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);
@@ -32,7 +33,7 @@ const MainPage = ({ router }: IMainPageProps) => {
       <div className={styles.main_page_body}>
         <section className={styles.hero}>
           <div className={styles.hero_content}>
-            {/*<TGHMainSearch />*/}
+            <TGHMainSearch />
             {/*<div className={styles.hero_image}>*/}
             {/*  <img src={mainImg.src} alt={'메인페이지 이미지'} />*/}
             {/*  <div className={styles.hero_text}>*/}
