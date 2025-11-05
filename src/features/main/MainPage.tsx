@@ -2,9 +2,6 @@ import {
   GrandLounge,
   ourFacilitiesLeft,
   ourFacilitiesRight,
-  roomsArrowButton,
-  roomsPremiumDeluxe01,
-  roomsPremiumDeluxe02,
   safetComfort,
   TheArtOfDining,
   WineBarReserve,
@@ -19,6 +16,11 @@ import styles from './MainPage.module.css';
 import './reset.css';
 import TGHExperienceImage from '@/components/common/TGHExperienceImage/TGHExperienceImage';
 import { TGHMainSearch } from '@/components';
+import { TGHRooms } from '@/components/common/TGHRooms';
+
+import { Box } from '@mantine/core';
+
+import TGHRoomsImage from '@/components/common/TGHRoomsImage';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);
@@ -91,41 +93,45 @@ const MainPage = ({ router }: IMainPageProps) => {
           {/*</div>*/}
         </section>
         <section className={styles.rooms}>
-          <div>
-            <h1 className={styles.rooms_title}>
-              Premium Rooms
-              <br />& Suites
-            </h1>
-            <p className={styles.rooms_description}>
-              예술적 품격을 갖춘 모던한 디럭스 객실부터 우아한 감성의 스위트 객실과 최고급 럭셔리 풀빌라까지,
-              <br />
-              다양한 객실에서 격이 다른 휴식과 여유를 경험해 보세요.
-            </p>
-          </div>
-          <div className={styles.rooms_reserve}>
-            <div>
-              <img src={roomsPremiumDeluxe01.src} alt={'프리미엄디럭스 왼쪽 이미지'} />
-              <h2 className={styles.rooms_left_title01}>프리미엄 디럭스</h2>
-              <p className={styles.rooms_left_description01}>
-                한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스
-              </p>
-              {/*<h2 className={styles.rooms_left_title02}>그랜드 디럭스 스위트</h2>*/}
-              {/*<p className={styles.rooms_left_description02}>*/}
-              {/*  클래식한 감성과 이국적인 신비로움이 가득한 그랜드 디럭스 스위트*/}
-              {/*</p>*/}
-              {/*<h2 className={styles.rooms_left_title03}>로열 스위트</h2>*/}
-              {/*<p className={styles.rooms_left_description03}>*/}
-              {/*  감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트*/}
-              {/*</p>*/}
-              <button className={styles.rooms_arrow_btn}>
-                <img src={roomsArrowButton.src} alt={'rooms 화살표 버튼'} />
-              </button>
-            </div>
-            <div>
-              <img src={roomsPremiumDeluxe02.src} alt={'프리미엄디럭스 오른쪽 이미지'} />
-              <button className={styles.rooms_reserve_btn}>지금 예약</button>
-            </div>
-          </div>
+          <Box bg="#fffcf6" h={1961}>
+            <TGHRooms />
+            <TGHRoomsImage />
+          </Box>
+          {/*<div>*/}
+          {/*  <h1 className={styles.rooms_title}>*/}
+          {/*    Premium Rooms*/}
+          {/*    <br />& Suites*/}
+          {/*  </h1>*/}
+          {/*  <p className={styles.rooms_description}>*/}
+          {/*    예술적 품격을 갖춘 모던한 디럭스 객실부터 우아한 감성의 스위트 객실과 최고급 럭셔리 풀빌라까지,*/}
+          {/*    <br />*/}
+          {/*    다양한 객실에서 격이 다른 휴식과 여유를 경험해 보세요.*/}
+          {/*  </p>*/}
+          {/*</div>*/}
+          {/*<div className={styles.rooms_reserve}>*/}
+          {/*  <div>*/}
+          {/*    <img src={roomsPremiumDeluxe01.src} alt={'프리미엄디럭스 왼쪽 이미지'} />*/}
+          {/*    <h2 className={styles.rooms_left_title01}>프리미엄 디럭스</h2>*/}
+          {/*    <p className={styles.rooms_left_description01}>*/}
+          {/*      한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스*/}
+          {/*    </p>*/}
+          {/*<h2 className={styles.rooms_left_title02}>그랜드 디럭스 스위트</h2>*/}
+          {/*<p className={styles.rooms_left_description02}>*/}
+          {/*  클래식한 감성과 이국적인 신비로움이 가득한 그랜드 디럭스 스위트*/}
+          {/*</p>*/}
+          {/*<h2 className={styles.rooms_left_title03}>로열 스위트</h2>*/}
+          {/*<p className={styles.rooms_left_description03}>*/}
+          {/*  감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트*/}
+          {/*</p>*/}
+          {/*    <button className={styles.rooms_arrow_btn}>*/}
+          {/*      <img src={roomsArrowButton.src} alt={'rooms 화살표 버튼'} />*/}
+          {/*    </button>*/}
+          {/*  </div>*/}
+          {/*  <div>*/}
+          {/*    <img src={roomsPremiumDeluxe02.src} alt={'프리미엄디럭스 오른쪽 이미지'} />*/}
+          {/*    <button className={styles.rooms_reserve_btn}>지금 예약</button>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </section>
         <section className={styles.our_facilities}>
           <div className={styles.our_facilities_images}>
