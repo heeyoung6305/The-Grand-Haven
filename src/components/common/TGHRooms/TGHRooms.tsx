@@ -1,9 +1,11 @@
-import { Flex, Text, Title } from '@mantine/core';
+import { Box, Flex, Text, Title } from '@mantine/core';
+
+import { TGHRoomsImage } from '@/components';
 
 import styles from './TGHRooms.module.css';
 
 const TGHRooms = () => (
-  <>
+  <Box bg={'#fffcf6'} px={30}>
     <Flex className={styles.rooms}>
       <Title className={styles.rooms_title} order={3} textWrap="wrap">
         Premium Rooms
@@ -15,6 +17,7 @@ const TGHRooms = () => (
         다양한 객실에서 격이 다른 휴식과 여유를 경험해 보세요.
       </Text>
     </Flex>
-  </>
+    <TGHRoomsImage />
+  </Box>
 );
 export default TGHRooms;

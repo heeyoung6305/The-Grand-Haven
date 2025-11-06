@@ -10,7 +10,7 @@ import styles from './TGHHeader.module.css';
  * @constructor
  */
 const TGHHeader = () => (
-  <Stack w={'100%'} gap={100} pt={40} px={30}>
+  <Stack w={'100%'} gap={100} pt={40} px={30} bg={'#ede9e4'}>
     <Flex className={styles.tgh_header_flex}>
       <TGHButton className={styles.tgh_header_menu_btn} onClick={() => console.log('로그인')} label={'로그인'} />
       <TGHButton className={styles.tgh_header_menu_btn} onClick={() => console.log('회원가입')} label={'회원가입'} />

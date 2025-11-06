@@ -3,6 +3,7 @@
   padding: 0 30px;
   flex-direction: row;
   gap: 55px;
+  background-color: #ede9e4;
 }
 
 .service_menu_list {

@@ -1,21 +1,23 @@
 .rooms {
-    display: flex;
-    flex-direction: column;
-    padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 300px;
 }
+
 .rooms_title {
-    font-family: "albertusNova";
-    color: #191919;
-    font-size: 148px;
-    letter-spacing: 4px;
-    line-height: 1.1;
-    margin-bottom: 40px;
+  font-family: "albertusNova";
+  color: #191919;
+  font-size: 148px;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  margin-bottom: 40px;
 }
+
 .rooms_description {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    color: #191919;
-    font-size: 28px;
-    line-height: 1.2;
-    /*margin-bottom: 150px;*/
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  color: #191919;
+  font-size: 28px;
+  line-height: 1.2;
+  /*margin-bottom: 150px;*/
 }
