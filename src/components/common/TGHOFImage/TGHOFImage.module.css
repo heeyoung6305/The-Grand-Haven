@@ -1,0 +1,15 @@
+.of_box {
+    position: relative;
+}
+.of_background_img {
+    position: absolute;
+    top: -137px;         /*영역 마음에 걸려요*/
+}
+.of_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.of_image_left {
+    transform: translateY(290px);
+}

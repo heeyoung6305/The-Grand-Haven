@@ -1,7 +1,7 @@
 .rooms_reserve {
     display: flex;
     justify-content: space-around;
-    padding-top: 120px;
+    padding: 120px 0 300px 0;
 }
 .rooms_background_img{
     width: 757px;

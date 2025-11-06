@@ -3,6 +3,7 @@ import GrandLounge from './Grand_Lounge.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
 import mainImg from './main_img.svg';
+import ourFacilitiesLabel from './our_facilities_label.svg';
 import ourFacilitiesLeft from './our_facilities_left.svg';
 import ourFacilitiesRight from './our_facilities_right.svg';
 import roomsArrowButton from './rooms_arrow_button.svg';
@@ -34,4 +35,5 @@ export {
   GrandLounge,
   WineBarReserve,
   safetComfort,
+  ourFacilitiesLabel,
 };
