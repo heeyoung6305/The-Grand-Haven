@@ -11,7 +11,7 @@ const TGHExperienceImage = () => (
       <Flex className={styles.about_images}>
         <Image radius="none" w="auto" fit="contain" src={hotelLobby02.src} alt={''} />
         <TGHExperience />
-        <Image radius="none" w="auto" fit="contain" src={hotelLobby01.src} />
+        <Image radius="none" w="auto" fit="contain" src={hotelLobby01.src} alt={''} />
       </Flex>
     </BackgroundImage>
   </Box>

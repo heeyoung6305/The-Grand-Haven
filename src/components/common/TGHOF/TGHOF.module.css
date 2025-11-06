@@ -1,0 +1,24 @@
+.of {
+    display: flex;
+    flex-direction: column;
+    /*padding-top: 300px;*/
+}
+.of_title {
+    font-family: "albertusNova";
+    color: #191919;
+    font-size: 148px;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 100px;
+}
+.lities {
+    padding-left: 300px;
+}
+.of_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 22px;
+    line-height: 1.2;
+    opacity: 80%;
+}
