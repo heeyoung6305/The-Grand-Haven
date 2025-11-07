@@ -290,39 +290,39 @@
 /*    line-height: 1.2;*/
 /*    opacity: 80%;*/
 /*}*/
-.our_facilities01 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 300px 0 100px 470px;
-}
-.our_facilities_title01 {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    color: #191919;
-    font-size: 80px;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
-}
-.our_facilities_description01 {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    color: #191919;
-    font-size: 20px;
-    opacity: 80%;
-}
-.our_facilities02, .our_facilities03 {
-    display: flex;
-    align-items: center;
-    gap: 180px;
-}
-.our_facilities_title02, .our_facilities_title03 {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    color: #191919;
-    font-size: 80px;
-    letter-spacing: 2px;
-}
+/*.our_facilities01 {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin: 300px 0 100px 470px;*/
+/*}*/
+/*.our_facilities_title01 {*/
+/*    font-family: "Crimson Text", serif;*/
+/*    font-weight: 400;*/
+/*    color: #191919;*/
+/*    font-size: 80px;*/
+/*    letter-spacing: 2px;*/
+/*    margin-bottom: 50px;*/
+/*}*/
+/*.our_facilities_description01 {*/
+/*    font-family: "Noto Sans KR", sans-serif;*/
+/*    font-weight: 400;*/
+/*    color: #191919;*/
+/*    font-size: 20px;*/
+/*    opacity: 80%;*/
+/*}*/
+/*.our_facilities02, .our_facilities03 {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 180px;*/
+/*}*/
+/*.our_facilities_title02, .our_facilities_title03 {*/
+/*    font-family: "Crimson Text", serif;*/
+/*    font-weight: 400;*/
+/*    color: #191919;*/
+/*    font-size: 80px;*/
+/*    letter-spacing: 2px;*/
+/*}*/
 
 /*.safet_comfort {*/
 /*    position: relative;*/
