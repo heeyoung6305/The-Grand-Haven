@@ -1,0 +1,22 @@
+.of_section01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 300px 0 100px 470px;
+}
+.of_section_title01 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+.of_section_description01 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 20px;
+    opacity: 80%;
+}

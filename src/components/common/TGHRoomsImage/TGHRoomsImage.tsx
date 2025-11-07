@@ -8,7 +8,7 @@ import styles from './TGHRoomsImage.module.css';
 const TGHRoomsImage = () => (
   <Flex className={styles.rooms_reserve}>
     <Box>
-      <Image radius="none" w="auto" fit="contain" src={roomsPremiumDeluxe01.src} />
+      <Image radius="none" w="auto" fit="none" src={roomsPremiumDeluxe01.src} />
       <TGHRoomsText />
     </Box>
     <Box>

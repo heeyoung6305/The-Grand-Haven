@@ -1,9 +1,16 @@
 import aboutLabel from './about_label.svg';
+import gallery01 from './gallery01.svg';
+import gallery02 from './gallery02.svg';
+import gallery03 from './gallery03.svg';
+import gallery04 from './gallery04.svg';
+import gallery05 from './gallery05.svg';
 import GrandLounge from './Grand_Lounge.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
 import mainImg from './main_img.svg';
-import ourFacilitiesLabel from './our_facilities_label.svg';
+import ofArrowButton01 from './of_arrow_button_01.svg';
+import ofArrowButton0203 from './of_arrow_button_0203.svg';
+import ofLabel from './of_label.svg';
 import ourFacilitiesLeft from './our_facilities_left.svg';
 import ourFacilitiesRight from './our_facilities_right.svg';
 import roomsArrowButton from './rooms_arrow_button.svg';
@@ -35,5 +42,12 @@ export {
   GrandLounge,
   WineBarReserve,
   safetComfort,
-  ourFacilitiesLabel,
+  ofLabel,
+  ofArrowButton01,
+  ofArrowButton0203,
+  gallery01,
+  gallery02,
+  gallery03,
+  gallery04,
+  gallery05,
 };

@@ -1,0 +1,15 @@
+.of_section02 {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+.of_section_title02_1, .of_section_title02_2 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+.of_arrow_btn_02 {
+    padding-left: 240px;
+}
