@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 300px;
+    /*padding-top: 180px;*/
 }
-
+.gallery_background_img {
+    position: relative;
+    top: 30px;
+}
 .gallery_title {
     font-family: "albertusNova";
     color: #9d835a;
     font-size: 173px;
     letter-spacing: 4px;
     line-height: 1.1;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .gallery_description {
@@ -22,4 +25,5 @@
     line-height: 1.2;
     text-align: center;
     opacity: 80%;
+    padding-bottom: 180px;
 }

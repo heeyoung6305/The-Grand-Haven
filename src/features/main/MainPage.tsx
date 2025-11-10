@@ -1,7 +1,6 @@
 import { TGHMainSearch } from '@/components';
 import { TGHComfort } from '@/components/common/TGHComfort';
 import TGHExperienceImage from '@/components/common/TGHExperienceImage/TGHExperienceImage';
-import { TGHGallery } from '@/components/common/TGHGallery';
 import { TGHGalleryImages } from '@/components/common/TGHGalleryImages';
 import TGHOFImage from '@/components/common/TGHOFImage/TGHOFImage';
 import { TGHOFSection01 } from '@/components/common/TGHOFSection01';
@@ -47,7 +46,6 @@ const MainPage = ({ router }: IMainPageProps) => {
           <TGHComfort />
         </section>
         <section>
-          <TGHGallery />
           <TGHGalleryImages />
         </section>
         <button onClick={handleRoomButtonClick}>Go to Room</button>

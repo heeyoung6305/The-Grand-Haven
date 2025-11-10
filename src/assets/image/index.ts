@@ -4,6 +4,7 @@ import gallery02 from './gallery02.svg';
 import gallery03 from './gallery03.svg';
 import gallery04 from './gallery04.svg';
 import gallery05 from './gallery05.svg';
+import galleryLabel from './gallery_label.svg';
 import GrandLounge from './Grand_Lounge.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
@@ -50,4 +51,5 @@ export {
   gallery03,
   gallery04,
   gallery05,
+  galleryLabel,
 };
