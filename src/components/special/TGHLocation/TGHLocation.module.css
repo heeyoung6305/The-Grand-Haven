@@ -1,0 +1,26 @@
+.location_flex {
+    background-color: #9d835a;
+    color: #fffcf6;
+    width: 960px;
+    height: 960px;
+    padding: 150px;
+    flex-direction: column;
+    justify-content: center;
+}
+.location_title01 {
+    font-family: "albertusNova";
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+}
+.location_title02 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.location_text {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 2.5;
+}

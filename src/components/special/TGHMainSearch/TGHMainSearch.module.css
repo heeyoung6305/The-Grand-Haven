@@ -12,7 +12,7 @@
   background-color: #313F387A;
   backdrop-filter: blur(10px);
   opacity: 90%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 

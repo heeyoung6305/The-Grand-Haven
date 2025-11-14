@@ -10,7 +10,9 @@ import { ITGHButton } from '@/types';
  */
 const TGHButton = ({ label, ...props }: ITGHButton) => (
   <>
-    <Button {...props}>{label}</Button>
+    <Button radius={0} {...props}>
+      {label}
+    </Button>
   </>
 );
 
