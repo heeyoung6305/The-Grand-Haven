@@ -1,0 +1,13 @@
+.tgh_footer_info_box {
+    > p {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 20px;
+        color: #191919;
+        letter-spacing: 1px;
+        opacity: 75%;
+    }
+}
+
+.tgh_footer_info_box_content {
+    font-weight: 600;
+}
