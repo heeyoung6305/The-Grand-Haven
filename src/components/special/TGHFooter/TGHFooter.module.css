@@ -4,26 +4,31 @@
     color: #9d835a;
     letter-spacing: 1px;
 }
-.footer_text01,.footer_text03 {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 20px;
-    color: #191919;
-    letter-spacing: 1px;
-    opacity: 75%;
+.footer_text03 {
+    height: 30px;
+    gap: 17px;
+    > p {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 20px;
+        color: #191919;
+        letter-spacing: 1px;
+        opacity: 75%;
+    }
 }
-.number {
-    font-weight: 600;
-}
+
 .divider {
-    margin: 0 8px;
-    opacity: 25%;
+    align-self: center;
 }
+
 .footer_text02 {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 20px;
-    color: #191919;
-    letter-spacing: 1px;
-    gap: 40px;
+    gap: 38px;
+    > p {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 20px;
+        color: #191919;
+        letter-spacing: 1px;
+        gap: 40px;
+    }
 }
 .policy {
     font-weight: 600;
