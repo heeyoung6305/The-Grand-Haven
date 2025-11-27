@@ -9,6 +9,7 @@ import GrandLounge from './Grand_Lounge.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
 import mainImg from './main_img.svg';
+import Map from './Map.svg';
 import ofArrowButton01 from './of_arrow_button_01.svg';
 import ofArrowButton0203 from './of_arrow_button_0203.svg';
 import ofLabel from './of_label.svg';
@@ -52,4 +53,5 @@ export {
   gallery04,
   gallery05,
   galleryLabel,
+  Map,
 };

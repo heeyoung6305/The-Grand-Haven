@@ -8,7 +8,7 @@ const SERVICE_MENU_DATA: ITGHMenuNav[] = [
   { code: ServiceMenuEnum.EXPERIENCE, name: 'EXPERIENCE' },
   { code: ServiceMenuEnum.HOTEL, name: 'HOTEL' },
   { code: ServiceMenuEnum.DINING, name: 'DINING' },
-  { code: ServiceMenuEnum.ART_TAINMENT, name: 'ART_TAINMENT' },
+  { code: ServiceMenuEnum.ART_COLLECTION, name: 'ART_COLLECTION' },
   { code: ServiceMenuEnum.GALLERY, name: 'GALLERY' },
 ];
 

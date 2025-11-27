@@ -12,6 +12,7 @@ const TGHOFSection01 = () => (
           <br />
           <br />
           <br />
+          <br />
           The Art <br />
           Of Dining
         </h2>

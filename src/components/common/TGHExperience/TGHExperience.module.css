@@ -9,21 +9,20 @@
     color: #9d835a;
     display: flex;
     text-align: right;
-    letter-spacing: 4px;
-    line-height: 1.1;
-    font-size: 92px;
+    line-height: 1;
+    font-size: 100px;
     margin-bottom: 120px;
 }
 .about_text {
-    width: 400px;
+    width: 427px;
     display: flex;
 }
 .about_subtitle {
     font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #191919;
     font-size: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 40px;
 }
 .about_description {

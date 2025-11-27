@@ -5,8 +5,7 @@
 .of_title {
     font-family: "albertusNova";
     color: #191919;
-    font-size: 148px;
-    letter-spacing: 4px;
+    font-size: 150px;
     line-height: 1.1;
     margin-bottom: 100px;
 }
@@ -17,7 +16,7 @@
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     color: #191919;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2;
     opacity: 80%;
 }
