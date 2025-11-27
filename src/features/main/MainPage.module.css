@@ -1,28 +1,26 @@
-/*desktop*/
-/*@import (max-width: 1920px);*/
-/*mobile*/
-/*@import (max-width: 480px);*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+/*en font_Crimson Text*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/*ko font_Noto Sans KR*/
+
+
+@font-face {
+    font-family: "AlbertusNova";
+    src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
+}
+/*main font_Albertus Nova*/
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
+}
+/*en font_Helvetica Neue*/
+
 
 .main_page_body {
     overflow-x: hidden;
     background-color: #ede9e4;
 }
 
-/*main font_Albertus Nova*/
-@font-face {
-    font-family: "AlbertusNova";
-    src: url("../../assets/fonts/AlbertusNova/albertus-nova.ttf");
-}
-/*en font_Helvetica Neue*/
-@font-face {
-    font-family: "HelveticaNeue";
-    src: url("../../assets/fonts/HelveticaNeue/helveticaNeueRoman.otf");
-}
-
-/*en font_Crimson Text*/
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-/*ko font_Noto Sans KR*/
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
 .header_title {
     /*font-size: 120px;*/
