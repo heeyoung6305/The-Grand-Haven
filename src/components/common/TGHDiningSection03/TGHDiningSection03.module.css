@@ -1,0 +1,22 @@
+.dining_section03 {
+    flex-direction: column;
+    background-color: #ede9e4;
+    width: 1733px;
+    height: 900px;
+    padding: 40px 0 0 200px;
+}
+.dining_section03_title {
+    font-family: "Crimson Text", serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #191919;
+}
+.dining_section03_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #191919;
+    opacity: 80%;
+    padding: 20px 0 50px 0;
+}

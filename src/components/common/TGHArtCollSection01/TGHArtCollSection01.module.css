@@ -1,0 +1,15 @@
+.artcoll_main {
+    display: flex;
+    justify-content: center;
+}
+.artcoll_main_image {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.artcoll_main_text {
+    font-family: "helveticaNeue";
+    font-size: 35px;
+    line-height: 1.3;
+    color: #191919;
+    padding-top: 30px;
+}

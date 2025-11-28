@@ -1,4 +1,17 @@
 import aboutLabel from './about_label.svg';
+import artCollection01 from './artCollection01.svg';
+import artCollection02 from './artCollection02.svg';
+import artCollection03 from './artCollection03.svg';
+import artCollection04 from './artCollection04.svg';
+import artCollection05 from './artCollection05.svg';
+import artCollection06 from './artCollection06.svg';
+import artCollection07 from './artCollection07.svg';
+import artCollection08 from './artCollection08.svg';
+import artCollection09 from './artCollection09.svg';
+import artCollection10 from './artCollection10.svg';
+import dining01 from './dining01.svg';
+import dining02 from './dining02.svg';
+import dining03 from './dining03.svg';
 import gallery01 from './gallery01.svg';
 import gallery02 from './gallery02.svg';
 import gallery03 from './gallery03.svg';
@@ -54,4 +67,17 @@ export {
   gallery05,
   galleryLabel,
   Map,
+  dining01,
+  dining02,
+  dining03,
+  artCollection01,
+  artCollection02,
+  artCollection03,
+  artCollection04,
+  artCollection05,
+  artCollection06,
+  artCollection07,
+  artCollection08,
+  artCollection09,
+  artCollection10,
 };
