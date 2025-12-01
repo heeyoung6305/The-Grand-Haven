@@ -1,4 +1,6 @@
 import { TGHMainSearch } from '@/components';
+import { TGHArtColl } from '@/components/common/TGHArtColl';
+import { TGHArtCollHero } from '@/components/common/TGHArtCollHero';
 import { TGHComfort } from '@/components/common/TGHComfort';
 import { TGHDining } from '@/components/common/TGHDining';
 import { TGHDiningSection01 } from '@/components/common/TGHDiningSection01';
@@ -22,9 +24,6 @@ import styles from './MainPage.module.css';
 
 import './reset.css';
 import { Divider } from '@mantine/core';
-
-import { TGHArtColl } from '@/components/common/TGHArtColl';
-import { TGHArtCollSection01 } from '@/components/common/TGHArtCollSection01';
 
 const MainPage = ({ router }: IMainPageProps) => {
   const { setServiceId } = useMainStore((state) => state);
@@ -85,7 +84,7 @@ const MainPage = ({ router }: IMainPageProps) => {
           <TGHArtColl />
         </section>
         <section>
-          <TGHArtCollSection01 />
+          <TGHArtCollHero />
         </section>
         <footer>
           <TGHFooter />

@@ -1,12 +1,12 @@
-.artcoll_main {
+.artcoll_hero {
     display: flex;
-    justify-content: center;
-}
-.artcoll_main_image {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
-.artcoll_main_text {
+.artcoll_hero_image {
+    flex-direction: column;
+}
+.artcoll_hero_text {
     font-family: "helveticaNeue";
     font-size: 35px;
     line-height: 1.3;
