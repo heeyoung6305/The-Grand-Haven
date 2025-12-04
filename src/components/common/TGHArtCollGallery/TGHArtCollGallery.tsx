@@ -15,9 +15,9 @@ import styles from '@/components/common/TGHArtCollGallery/TGHArtCollGallery.modu
 
 const TGHArtCollGallery = () => (
   <Box className={styles.artcoll_gallery}>
-    <Grid className={styles.artcoll_gallery_grid}>
+    <Grid>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection02.src} />
+        <Image w="auto" fit="cover" src={artCollection02.src} />
         <Text className={styles.artcoll_gallery_text}>
           Prisms and Mirrors, high reliefs,
           <br />
@@ -25,35 +25,35 @@ const TGHArtCollGallery = () => (
         </Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection03.src} />
+        <Image w="auto" fit="cover" src={artCollection03.src} />
         <Text className={styles.artcoll_gallery_text}>Between Red - 016NOV</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection04.src} />
+        <Image w="auto" fit="cover" src={artCollection04.src} />
         <Text className={styles.artcoll_gallery_text}>Eastern Celebrity & Western Celebrity 15</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection05.src} />
+        <Image w="auto" fit="cover" src={artCollection05.src} />
         <Text className={styles.artcoll_gallery_text}>Golden Legend</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection06.src} />
+        <Image w="auto" fit="cover" src={artCollection06.src} />
         <Text className={styles.artcoll_gallery_text}>The Surfer</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection07.src} />
+        <Image w="auto" fit="cover" src={artCollection07.src} />
         <Text className={styles.artcoll_gallery_text}>USQUAM NUSQUAM</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection08.src} />
+        <Image w="auto" fit="cover" src={artCollection08.src} />
         <Text className={styles.artcoll_gallery_text}>Paradise Lost I - IV Between Urras and Anarres</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection09.src} />
+        <Image w="auto" fit="cover" src={artCollection09.src} />
         <Text className={styles.artcoll_gallery_text}>Continental Splash</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image radius="none" w="auto" fit="none" src={artCollection10.src} />
+        <Image w="auto" fit="cover" src={artCollection10.src} />
         <Text className={styles.artcoll_gallery_text}>Coexistence</Text>
       </Grid.Col>
     </Grid>

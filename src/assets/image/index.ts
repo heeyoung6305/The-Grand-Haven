@@ -19,8 +19,20 @@ import gallery04 from './gallery04.svg';
 import gallery05 from './gallery05.svg';
 import galleryLabel from './gallery_label.svg';
 import GrandLounge from './Grand_Lounge.svg';
+import hotelDescription01 from './hotel_description01.svg';
+import hotelDescription012 from './hotel_description01_2.svg';
+import hotelDescription02 from './hotel_description02.svg';
+import hotelDescription022 from './hotel_description02_2.svg';
+import hotelDescription03 from './hotel_description03.svg';
+import hotelDescription032 from './hotel_description03_2.svg';
+import hotelHero01 from './hotel_hero01.svg';
+import hotelHero02 from './hotel_hero02.svg';
+import hotelHero03 from './hotel_hero03.svg';
 import hotelLobby01 from './hotel_lobby_01.svg';
 import hotelLobby02 from './hotel_lobby_02.svg';
+import hotelVisual01 from './hotel_visual01.svg';
+import hotelVisual02 from './hotel_visual02.svg';
+import hotelVisual03 from './hotel_visual03.svg';
 import mainImg from './main_img.svg';
 import Map from './Map.svg';
 import ofArrowButton01 from './of_arrow_button_01.svg';
@@ -80,4 +92,16 @@ export {
   artCollection08,
   artCollection09,
   artCollection10,
+  hotelHero01,
+  hotelHero02,
+  hotelHero03,
+  hotelDescription01,
+  hotelDescription02,
+  hotelDescription03,
+  hotelDescription012,
+  hotelDescription022,
+  hotelDescription032,
+  hotelVisual01,
+  hotelVisual02,
+  hotelVisual03,
 };
