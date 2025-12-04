@@ -1,0 +1,38 @@
+.hotel_hero_img{
+    width: 1920px;
+    height: 900px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 50px 50px 0;
+}
+.hotel_hero_reserve_btn {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fffcf6;
+    background-color: #9d835a;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.hotel_hero_reserve_btn:hover {
+    background-color: #886D42;
+}
+.hotel_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fffcf6;
+}
+.hotel_hero_title {
+    font-family: "Crimson Text", serif;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.hotel_hero_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}

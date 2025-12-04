@@ -8,6 +8,7 @@ import { TGHDiningSection02 } from '@/components/common/TGHDiningSection02';
 import { TGHDiningSection03 } from '@/components/common/TGHDiningSection03';
 import TGHExperienceImage from '@/components/common/TGHExperienceImage/TGHExperienceImage';
 import { TGHGalleryImages } from '@/components/common/TGHGalleryImages';
+import { TGHHotelHero } from '@/components/common/TGHHotelHero';
 import TGHOFImage from '@/components/common/TGHOFImage/TGHOFImage';
 import { TGHOFSection01 } from '@/components/common/TGHOFSection01';
 import { TGHOFSection02 } from '@/components/common/TGHOFSection02';
@@ -85,6 +86,13 @@ const MainPage = ({ router }: IMainPageProps) => {
         </section>
         <section>
           <TGHArtCollHero />
+        </section>
+        <footer>
+          <TGHFooter />
+        </footer>
+        <Divider />
+        <section>
+          <TGHHotelHero />
         </section>
         <footer>
           <TGHFooter />

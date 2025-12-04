@@ -1,11 +1,11 @@
 .artcoll_gallery {
     display: flex;
-    justify-content: center;
+    padding: 160px 160px 110px 160px;
 }
 .artcoll_gallery_image {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    padding: 40px;
 }
 .artcoll_gallery_text {
     font-family: "helveticaNeue";
@@ -14,7 +14,3 @@
     color: #191919;
     padding-top: 10px;
 }
-
-/*.artcoll_gallery_grid {*/
-/*    width: 1550px;*/
-/*}*/
