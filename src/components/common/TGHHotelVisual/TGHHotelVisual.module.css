@@ -1,0 +1,14 @@
+.hotel_visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hotel_visual_main {
+    flex-direction: column;
+    > p {
+        font-family: "helveticaNeue";
+        font-size: 28px;
+        color: #9d835a;
+        padding-bottom: 85px;
+    }
+}
