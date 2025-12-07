@@ -1,3 +1,3 @@
-export interface IMainPageProps {
-  router: NextRouter;
-}
+//export interface IMainPageProps {
+//  router: NextRouter;
+//}

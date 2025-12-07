@@ -1,10 +1,11 @@
 import { ReactNode } from 'react';
 
-import { LanguageEnum, ServiceMenuEnum } from '@/enums';
+import { LanguageEnum, ServiceIdEnum, ServiceMenuEnum } from '@/enums';
 
 export interface ITGHMenuNav {
   code: ServiceMenuEnum;
   name: ReactNode;
+  link?: ServiceIdEnum;
 }
 
 export interface ITGHLanguageData {

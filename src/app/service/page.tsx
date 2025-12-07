@@ -1,13 +1,22 @@
 'use client';
+import { Container } from '@mantine/core';
+import { useRouter } from 'next/navigation';
+
+import { TGHFooter, TGHHeader, TGHServiceMenu } from '@/components';
 import { ServicePage } from '@/features';
 import { useMainStore } from '@/providers';
 
 const Service = () => {
-  console.log('Service 페이지');
+  const router = useRouter();
   const { serviceId } = useMainStore((state) => state);
   return (
     <>
-      <ServicePage serviceId={serviceId} />
+      <TGHHeader />
+      <TGHServiceMenu router={router} />
+      <Container size={1920} p={0}>
+        <ServicePage serviceId={serviceId} />
+      </Container>
+      <TGHFooter />
     </>
   );
 };
