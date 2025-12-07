@@ -1,5 +1,5 @@
 .dining_section02 {
-    flex-direction: column;
+    align-items: flex-end;
     background-color: #ede9e4;
     width: 1733px;
     height: 900px;
@@ -7,6 +7,11 @@
     /*position: relative;*/
     /*left: 200px;*/
 }
+
+.dining_section02_stack {
+    gap: 0;
+}
+
 .dining_section02_title {
     font-family: "Crimson Text", serif;
     font-size: 80px;

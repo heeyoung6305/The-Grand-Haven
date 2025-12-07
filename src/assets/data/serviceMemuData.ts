@@ -1,4 +1,4 @@
-import { LanguageEnum, ServiceMenuEnum } from '@/enums';
+import { LanguageEnum, ServiceIdEnum, ServiceMenuEnum } from '@/enums';
 import { ITGHLanguageData, ITGHMenuNav } from '@/types';
 
 /**
@@ -6,9 +6,9 @@ import { ITGHLanguageData, ITGHMenuNav } from '@/types';
  */
 const SERVICE_MENU_DATA: ITGHMenuNav[] = [
   { code: ServiceMenuEnum.EXPERIENCE, name: 'EXPERIENCE' },
-  { code: ServiceMenuEnum.HOTEL, name: 'HOTEL' },
-  { code: ServiceMenuEnum.DINING, name: 'DINING' },
-  { code: ServiceMenuEnum.ART_COLLECTION, name: 'ART_COLLECTION' },
+  { code: ServiceMenuEnum.HOTEL, name: 'HOTEL', link: ServiceIdEnum.ROOM },
+  { code: ServiceMenuEnum.DINING, name: 'DINING', link: ServiceIdEnum.DINING },
+  { code: ServiceMenuEnum.ART_COLLECTION, name: 'ART COLLECTION', link: ServiceIdEnum.ART_COLLECTION },
   { code: ServiceMenuEnum.GALLERY, name: 'GALLERY' },
 ];
 
