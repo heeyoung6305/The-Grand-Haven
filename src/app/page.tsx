@@ -13,7 +13,7 @@ const Home = () => {
       <TGHHeader />
       <TGHServiceMenu router={router} />
       <Container size={1920} p={0}>
-        <MainPage router={router} />
+        <MainPage />
       </Container>
       <TGHFooter />
     </>

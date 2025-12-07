@@ -1,19 +1,19 @@
+import { Box } from '@mantine/core';
+
 import { TGHDining, TGHDiningSection01, TGHDiningSection02, TGHDiningSection03 } from '@/components';
 
 const DiningService = () => (
   <>
-    <section>
-      <TGHDining />
-    </section>
-    <section>
+    <TGHDining />
+    <Box>
       <TGHDiningSection01 />
-    </section>
-    <section>
+    </Box>
+    <Box>
       <TGHDiningSection02 />
-    </section>
-    <section>
+    </Box>
+    <Box>
       <TGHDiningSection03 />
-    </section>
+    </Box>
   </>
 );
 
