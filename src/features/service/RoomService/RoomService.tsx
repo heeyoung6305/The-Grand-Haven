@@ -1,6 +1,6 @@
 const RoomService = () => {
   console.log('/features/RoomService');
-  return <div>RoomService</div>;
+  return <>RoomService 비주얼 디지몬</>;
 };
 
 export default RoomService;
