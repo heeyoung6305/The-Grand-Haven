@@ -3,13 +3,12 @@
     font-size: 40px;
     font-weight: 500;
     color: #191919;
-    letter-spacing: 3px;
+    padding: 47px 0 10px 0;
 }
 .hotel_description_description {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 26px;
     font-weight: 400;
     color: #191919;
-    letter-spacing: 3px;
-    opacity: 80%;
+    opacity: 0.8;
 }

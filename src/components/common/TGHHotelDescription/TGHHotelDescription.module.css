@@ -1,6 +1,7 @@
 .hotel_description {
     flex-direction: column;
+    padding: 185px;
 }
 .hotel_description_img {
-    justify-content: space-around;
+    gap: 350px;
 }

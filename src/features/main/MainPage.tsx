@@ -4,7 +4,9 @@ import {
   TGHComfort,
   TGHExperienceImage,
   TGHGalleryImages,
+  TGHHotelDescription,
   TGHHotelHero,
+  TGHHotelVisual,
   TGHLocation,
   TGHMainSearch,
   TGHOFImage,
@@ -13,8 +15,6 @@ import {
   TGHOFSection03,
   TGHRooms,
 } from '@/components';
-import { TGHHotelDescription } from '@/components/common/TGHHotelDescription';
-import { TGHHotelVisual } from '@/components/common/TGHHotelVisual';
 
 import styles from './MainPage.module.css';
 
