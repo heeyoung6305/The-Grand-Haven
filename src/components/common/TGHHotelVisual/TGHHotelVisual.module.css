@@ -7,8 +7,8 @@
     flex-direction: column;
     > p {
         font-family: "helveticaNeue";
-        font-size: 28px;
+        font-size: 40px;
         color: #9d835a;
-        padding-bottom: 85px;
+        padding-bottom: 100px;
     }
 }

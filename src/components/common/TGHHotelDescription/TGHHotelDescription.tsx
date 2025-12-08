@@ -1,7 +1,7 @@
 import { Flex, Image } from '@mantine/core';
 
 import { hotelDescription01, hotelDescription012 } from '@/assets';
-import TGHHotelDescriptionText from '@/components/common/TGHHotelDescriptionText/TGHHotelDescriptionText';
+import { TGHHotelDescriptionText } from '@/components';
 
 import styles from './TGHHotelDescription.module.css';
 

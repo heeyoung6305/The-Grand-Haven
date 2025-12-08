@@ -15,6 +15,7 @@ export * from './TGHExperienceImage';
 export * from './TGHGallery';
 export * from './TGHGalleryImages';
 export * from './TGHHotelDescription';
+export * from './TGHHotelDescriptionText';
 // export * from './TGHHotelFeatures';
 export * from './TGHHotelHero';
 // export * from './TGHHotelNotice';
