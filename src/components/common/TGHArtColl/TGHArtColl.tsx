@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from '@mantine/core';
 
-import styles from '@/components/common/TGHArtColl/TGHArtColl.module.css';
+import styles from './TGHArtColl.module.css';
 
 const TGHArtColl = () => (
   <Box px={30}>

@@ -1,8 +1,6 @@
 import { Divider } from '@mantine/core';
 
 import {
-  TGHArtColl,
-  TGHArtCollHero,
   TGHComfort,
   TGHExperienceImage,
   TGHGalleryImages,
@@ -15,8 +13,11 @@ import {
   TGHOFSection03,
   TGHRooms,
 } from '@/components';
+import { TGHHotelDescription } from '@/components/common/TGHHotelDescription';
+import { TGHHotelVisual } from '@/components/common/TGHHotelVisual';
 
 import styles from './MainPage.module.css';
+
 import './reset.css';
 
 const MainPage = () => (
@@ -46,15 +47,15 @@ const MainPage = () => (
       <section>
         <TGHLocation />
       </section>
-      <section>
-        <TGHArtColl />
-      </section>
-      <section>
-        <TGHArtCollHero />
-      </section>
       <Divider />
       <section>
         <TGHHotelHero />
+      </section>
+      <section>
+        <TGHHotelVisual />
+      </section>
+      <section>
+        <TGHHotelDescription />
       </section>
     </div>
   </>
