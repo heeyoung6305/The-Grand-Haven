@@ -6,7 +6,7 @@ import { TGHHotelDescriptionText } from '@/components';
 import styles from './TGHHotelDescription.module.css';
 
 const TGHHotelDescription = () => (
-  <Flex className={styles.hotel_description}>
+  <Flex className={styles.hotel_description} bg={'#fffcf6'}>
     <Flex className={styles.hotel_description_img}>
       <Image radius="none" w="auto" fit="none" src={hotelDescription01.src} />
       <Image radius="none" w="auto" fit="none" src={hotelDescription012.src} />

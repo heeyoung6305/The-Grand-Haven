@@ -1,0 +1,48 @@
+.hotel_features {
+    padding: 100px 0 100px 0;
+}
+.hotel_features table td,
+.hotel_features table th {
+    vertical-align: top;
+}
+
+.hotel_features_info_title {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #191919;
+}
+.hotel_features_info_title th {
+    padding-bottom: 50px;
+}
+
+.hotel_features_info_thead {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9d835a;
+}
+.hotel_features_info_thead tr {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel_features_info_thead th {
+    flex: 1;
+    text-align: left;
+}
+
+.hotel_features_info_tbody {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #191919;
+    opacity: 0.75;
+}
+.hotel_features_info_tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel_features_info_tbody td {
+    flex: 1;
+    text-align: left;
+}
