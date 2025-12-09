@@ -19,6 +19,7 @@ import {
 import styles from './MainPage.module.css';
 
 import './reset.css';
+import { TGHHotelFeatures } from '@/components/common/TGHHotelFeatures';
 
 const MainPage = () => (
   <>
@@ -50,6 +51,9 @@ const MainPage = () => (
       <Divider />
       <section>
         <TGHHotelHero />
+      </section>
+      <section>
+        <TGHHotelFeatures />
       </section>
       <section>
         <TGHHotelVisual />
