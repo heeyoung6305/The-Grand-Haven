@@ -20,6 +20,7 @@ import styles from './MainPage.module.css';
 
 import './reset.css';
 import { TGHHotelFeatures } from '@/components/common/TGHHotelFeatures';
+import { TGHHotelNotice } from '@/components/common/TGHHotelNotice';
 
 const MainPage = () => (
   <>
@@ -60,6 +61,9 @@ const MainPage = () => (
       </section>
       <section>
         <TGHHotelDescription />
+      </section>
+      <section>
+        <TGHHotelNotice />
       </section>
     </div>
   </>
