@@ -1,0 +1,33 @@
+.hotel_notice {
+    background-color: #fffcf6;
+    width: 1546px;
+    border: 1px solid #e9e9e9;
+}
+.hotel_notice_bg {
+    width: 1545px;
+    height: 70px;
+    background-color: #e9e9e9;
+    padding-left: 30px;
+}
+.hotel_notice_title {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9d835a;
+    line-height: 70px;
+}
+.hotel_notice_inquiry {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #191919;
+}
+.hotel_notice_text {
+    flex-direction: column;
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #191919;
+    opacity: 0.75;
+}
