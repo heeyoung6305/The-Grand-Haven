@@ -1,7 +1,8 @@
 import { BackgroundImage, Box, Button, Flex, Text, Title } from '@mantine/core';
 
 import { hotelHero01 } from '@/assets';
-import styles from '@/components/common/TGHHotelHero/TGHHotelHero.module.css';
+
+import styles from './TGHHotelHero.module.css';
 
 const TGHHotelHero = () => (
   <Box>

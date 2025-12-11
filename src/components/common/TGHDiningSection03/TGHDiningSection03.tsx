@@ -1,7 +1,8 @@
 import { Box, Flex, Image, Text, Title } from '@mantine/core';
 
 import { dining03 } from '@/assets';
-import styles from '@/components/common/TGHDiningSection03/TGHDiningSection03.module.css';
+
+import styles from './TGHDiningSection03.module.css';
 
 const TGHDiningSection03 = () => (
   <Box bg={'#fffcf6'} h={1400}>
