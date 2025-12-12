@@ -1,7 +1,13 @@
 .hotel_description {
     flex-direction: column;
-    padding: 185px;
+    padding: 170px 185px 185px 185px;
 }
 .hotel_description_img {
     gap: 350px;
+}
+.hotel_description_background_img {
+    position: relative;
+    height: 130px;
+    top: 50px;
+    right: 145px;
 }

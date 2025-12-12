@@ -13,7 +13,7 @@ const TGHDiningSection01 = () => (
         <br />
         신선한 해산물과 셰프의 정성이 더해져 특별함이 담긴 미식 경험을 제공합니다.
       </Text>
-      <Image radius="none" w="auto" fit="none" src={dining01.src} />
+      <Image radius="none" w="auto" fit="none" src={dining01.src} alt={'다이닝 첫번째 섹션 메인 이미지'} />
     </Flex>
   </Box>
 );
