@@ -13,7 +13,7 @@ const TGHDiningSection03 = () => (
         <br />
         라운지와는 다른 깊이감이 느껴지는 우아한 분위기 속에서 한층 여유로운 시간을 만날 수 있습니다.
       </Text>
-      <Image radius="none" w="auto" fit="none" src={dining03.src} />
+      <Image radius="none" w="auto" fit="none" src={dining03.src} alt={'다이닝 세번째 섹션 메인 이미지'} />
     </Flex>
   </Box>
 );

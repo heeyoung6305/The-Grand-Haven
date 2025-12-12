@@ -25,6 +25,7 @@ import hotelDescription02 from './hotel_description02.svg';
 import hotelDescription022 from './hotel_description02_2.svg';
 import hotelDescription03 from './hotel_description03.svg';
 import hotelDescription032 from './hotel_description03_2.svg';
+import hotelDescriptionLabel from './hotel_description_label.svg';
 import hotelHero01 from './hotel_hero01.svg';
 import hotelHero02 from './hotel_hero02.svg';
 import hotelHero03 from './hotel_hero03.svg';
@@ -104,4 +105,5 @@ export {
   hotelVisual01,
   hotelVisual02,
   hotelVisual03,
+  hotelDescriptionLabel,
 };

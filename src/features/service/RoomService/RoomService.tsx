@@ -1,6 +1,23 @@
-const RoomService = () => {
-  console.log('/features/RoomService');
-  return <>RoomService 비주얼 디지몬</>;
-};
+import { TGHHotelDescription, TGHHotelFeatures, TGHHotelHero, TGHHotelNotice, TGHHotelVisual } from '@/components';
+
+const RoomService = () => (
+  <>
+    <section>
+      <TGHHotelHero />
+    </section>
+    <section>
+      <TGHHotelFeatures />
+    </section>
+    <section>
+      <TGHHotelVisual />
+    </section>
+    <section>
+      <TGHHotelDescription />
+    </section>
+    <section>
+      <TGHHotelNotice />
+    </section>
+  </>
+);
 
 export default RoomService;
