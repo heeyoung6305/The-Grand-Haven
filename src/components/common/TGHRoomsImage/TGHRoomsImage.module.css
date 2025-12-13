@@ -24,3 +24,27 @@
 .rooms_reserve_btn:hover {
     background-color: #886D42;
 }
+
+.rooms_left_title {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    color: #191919;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 50px;
+    white-space: normal;
+    word-break: keep-all;
+}
+.rooms_left_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 20px;
+    opacity: 80%;
+    white-space: normal;
+    word-break: keep-all;
+}
+.rooms_arrow_btn {
+    position: relative;
+    left: -65px;
+}
