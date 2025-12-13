@@ -28,5 +28,4 @@ export * from './TGHOFSection02';
 export * from './TGHOFSection03';
 export * from './TGHRooms';
 export * from './TGHRoomsImage';
-export * from './TGHRoomsText';
 export * from './TGHSearchInfoForm';
