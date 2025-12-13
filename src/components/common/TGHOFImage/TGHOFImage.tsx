@@ -7,7 +7,7 @@ import styles from './TGHOFImage.module.css';
 
 const TGHOFImage = () => (
   <Box bg={'#fffcf6'} px={30} className={styles.of_box}>
-    <Image className={styles.of_background_img} radius="none" w="auto" fit="contain" src={ofLabel.src} />
+    <Image className={styles.of_background_img} radius="none" w="auto" fit="contain" src={ofLabel.src} alt={''} />
     <Flex className={styles.of_images}>
       <Image
         className={styles.of_image_left}

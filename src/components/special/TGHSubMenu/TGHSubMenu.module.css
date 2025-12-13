@@ -1,0 +1,12 @@
+.sub_header_title {
+    font-family: "albertusNova";
+    color: #191919;
+    font-size: 30px;
+}
+.sub_header_text {
+    > p {
+        font-family: "helveticaNeue";
+        font-size: 24px;
+        color: #191919;
+    }
+}
