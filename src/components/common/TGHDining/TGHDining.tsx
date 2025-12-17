@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Title } from '@mantine/core';
 
-import styles from '@/components/common/TGHDining/TGHDining.module.css';
+import styles from './TGHDining.module.css';
 
 const TGHDining = () => (
   <Box bg={'#fffcf6'} px={30}>
