@@ -10,6 +10,7 @@ import {
   TGHOFSection03,
   TGHRooms,
 } from '@/components';
+import { TGHRoomsSelect } from '@/components/common/TGHRoomsSelect';
 
 import styles from './MainPage.module.css';
 
@@ -41,6 +42,9 @@ const MainPage = () => (
       </section>
       <section>
         <TGHLocation />
+      </section>
+      <section>
+        <TGHRoomsSelect />
       </section>
     </div>
   </>

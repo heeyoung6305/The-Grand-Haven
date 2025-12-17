@@ -1,0 +1,18 @@
+.rooms_select {
+    flex-direction: column;
+    padding: 180px 0 240px 0 ;
+}
+.rooms_select_title {
+    font-family: "Crimson Text", serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: #191919;
+    letter-spacing: 3px;
+}
+.rooms_select_description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #191919;
+    opacity: 0.8;
+}
