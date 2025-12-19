@@ -1,6 +1,6 @@
 import { Text, Typography } from '@mantine/core';
 
-import styles from '@/components/common/TGHHotelDescriptionText/TGHHotelDescriptionText.module.css';
+import styles from './TGHHotelDescriptionText.module.css';
 
 const TGHHotelDescriptionText = () => (
   <Text className={styles.hotel_description_text}>

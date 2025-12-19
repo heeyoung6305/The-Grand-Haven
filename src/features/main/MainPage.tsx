@@ -15,6 +15,7 @@ import { TGHRoomsSelect } from '@/components/common/TGHRoomsSelect';
 import styles from './MainPage.module.css';
 
 import './reset.css';
+import { TGHRoomsDeluxe } from '@/components/common/TGHRoomsDeluxe';
 
 const MainPage = () => (
   <>
@@ -45,6 +46,9 @@ const MainPage = () => (
       </section>
       <section>
         <TGHRoomsSelect />
+      </section>
+      <section>
+        <TGHRoomsDeluxe />
       </section>
     </div>
   </>
