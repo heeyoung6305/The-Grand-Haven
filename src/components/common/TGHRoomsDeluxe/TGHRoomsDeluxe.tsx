@@ -1,4 +1,6 @@
-import { Box, Button, Divider, Flex, Group, Stack, Text, Title } from '@mantine/core';
+import { Button, Divider, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
+
+import { premiumDeluxe01 } from '@/assets';
 
 import styles from './TGHRoomsDeluxe.module.css';
 
@@ -9,8 +11,11 @@ const TGHRoomsDeluxe = () => (
       <Text className={styles.rooms_deluxe_description_a}>
         한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스 객실
       </Text>
-      <Box className={styles.rooms_deluxe_bg}>
-        <Stack>
+      <Flex className={styles.rooms_deluxe_bg}>
+        <Image radius="none" w="auto" fit="cover" src={premiumDeluxe01.src} />
+        {/*<Image radius="none" w="auto" fit="cover" src={premiumDeluxe02.src} />*/}
+        {/*<Image radius="none" w="auto" fit="cover" src={premiumDeluxe03.src} />*/}
+        <Stack className={styles.rooms_deluxe_details}>
           <Title className={styles.rooms_deluxe_title_b}>프리미엄 디럭스</Title>
           <Text className={styles.rooms_deluxe_description_b}>
             큰 창으로 들어오는 빛과 여유롭게 펼쳐진 공간이
@@ -34,7 +39,7 @@ const TGHRoomsDeluxe = () => (
           </Stack>
           <Button className={styles.rooms_deluxe_reserve_btn}>예약하기</Button>
         </Stack>
-      </Box>
+      </Flex>
     </Flex>
   </Flex>
 );
