@@ -18,6 +18,9 @@ import gallery03 from './gallery03.svg';
 import gallery04 from './gallery04.svg';
 import gallery05 from './gallery05.svg';
 import galleryLabel from './gallery_label.svg';
+import grandDeluxeSuite01 from './grand_Deluxe_Suite01.svg';
+import grandDeluxeSuite02 from './grand_Deluxe_Suite02.svg';
+import grandDeluxeSuite03 from './grand_Deluxe_Suite03.svg';
 import GrandLounge from './Grand_Lounge.svg';
 import hotelDescription01 from './hotel_description01.svg';
 import hotelDescription012 from './hotel_description01_2.svg';
@@ -41,13 +44,19 @@ import ofArrowButton0203 from './of_arrow_button_0203.svg';
 import ofLabel from './of_label.svg';
 import ourFacilitiesLeft from './our_facilities_left.svg';
 import ourFacilitiesRight from './our_facilities_right.svg';
+import premiumDeluxe01 from './premium_deluxe01.svg';
+import premiumDeluxe02 from './premium_deluxe02.svg';
+import premiumDeluxe03 from './premium_deluxe03.svg';
 import roomsArrowButton from './rooms_arrow_button.svg';
 import roomsGrandDeluxe01 from './rooms_grand_deluxe_suite01.svg';
 import roomsGrandDeluxe02 from './rooms_grand_deluxe_suite02.svg';
 import roomsPremiumDeluxe01 from './rooms_premium_deluxe01.svg';
 import roomsPremiumDeluxe02 from './rooms_premium_deluxe02.svg';
-import royalSuite01 from './rooms_royal_suite01.svg';
-import royalSuite02 from './rooms_royal_suite02.svg';
+import roomsRoyalSuite01 from './rooms_royal_suite01.svg';
+import roomsroyalSuite02 from './rooms_royal_suite02.svg';
+import royalSuite01 from './royal_Suite01.svg';
+import royalSuite02 from './royal_Suite02.svg';
+import royalSuite03 from './royal_Suite03.svg';
 import safetComfort from './safet_comfort.svg';
 import TheArtOfDining from './The_Art_Of_Dining.svg';
 import WineBarReserve from './Wine_Bar_Reserve.svg';
@@ -61,8 +70,8 @@ export {
   roomsGrandDeluxe02,
   roomsPremiumDeluxe01,
   roomsPremiumDeluxe02,
-  royalSuite01,
-  royalSuite02,
+  roomsRoyalSuite01,
+  roomsroyalSuite02,
   roomsArrowButton,
   ourFacilitiesLeft,
   ourFacilitiesRight,
@@ -106,4 +115,13 @@ export {
   hotelVisual02,
   hotelVisual03,
   hotelDescriptionLabel,
+  grandDeluxeSuite01,
+  grandDeluxeSuite02,
+  grandDeluxeSuite03,
+  royalSuite01,
+  royalSuite02,
+  royalSuite03,
+  premiumDeluxe01,
+  premiumDeluxe02,
+  premiumDeluxe03,
 };
