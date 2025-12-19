@@ -1,6 +1,6 @@
 .rooms_select {
     flex-direction: column;
-    padding: 180px 0 240px 0 ;
+    padding-top: 180px;
 }
 .rooms_select_title {
     font-family: "Crimson Text", serif;

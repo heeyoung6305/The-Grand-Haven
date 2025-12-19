@@ -33,6 +33,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    transition: all 0.25s ease;
     position: absolute;
     right: 50px;
     bottom: 50px;
