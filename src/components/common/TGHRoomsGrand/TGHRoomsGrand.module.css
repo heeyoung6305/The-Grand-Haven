@@ -49,7 +49,7 @@
     }
 }
 
-.rooms_grand_reserve_btn {
+.reserve_btn {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -61,8 +61,22 @@
     height: 40px;
     transition: all 0.25s ease;
 }
-.rooms_grand_reserve_btn:hover {
+.reserve_btn:hover {
     color: #fffcf6;
     background-color: #9d835a;
 }
 
+.arrow_btn {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow_btn_left {
+    position: relative;
+    left: -65px;
+    top: -32px;
+}
+.arrow_btn_right {
+    position: relative;
+    left: 65px;
+    top: -32px;
+}

@@ -1,4 +1,6 @@
 import aboutLabel from './about_label.svg';
+import arrowButtonLeft from './arrow_button_left.svg';
+import arrowButtonRight from './arrow_button_right.svg';
 import artCollection01 from './artCollection01.svg';
 import artCollection02 from './artCollection02.svg';
 import artCollection03 from './artCollection03.svg';
@@ -40,7 +42,6 @@ import hotelVisual03 from './hotel_visual03.svg';
 import mainImg from './main_img.svg';
 import Map from './Map.svg';
 import ofArrowButton01 from './of_arrow_button_01.svg';
-import ofArrowButton0203 from './of_arrow_button_0203.svg';
 import ofLabel from './of_label.svg';
 import ourFacilitiesLeft from './our_facilities_left.svg';
 import ourFacilitiesRight from './our_facilities_right.svg';
@@ -81,7 +82,6 @@ export {
   safetComfort,
   ofLabel,
   ofArrowButton01,
-  ofArrowButton0203,
   gallery01,
   gallery02,
   gallery03,
@@ -124,4 +124,6 @@ export {
   premiumDeluxe01,
   premiumDeluxe02,
   premiumDeluxe03,
+  arrowButtonLeft,
+  arrowButtonRight,
 };
