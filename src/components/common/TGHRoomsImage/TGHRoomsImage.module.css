@@ -20,6 +20,7 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
+    transition: all 0.25s ease;
 }
 .rooms_reserve_btn:hover {
     background-color: #886D42;
@@ -40,7 +41,7 @@
     font-weight: 400;
     color: #191919;
     font-size: 20px;
-    opacity: 80%;
+    opacity: 0.8;
     white-space: normal;
     word-break: keep-all;
 }

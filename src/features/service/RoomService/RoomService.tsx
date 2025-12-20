@@ -1,22 +1,38 @@
-import { TGHHotelDescription, TGHHotelFeatures, TGHHotelHero, TGHHotelNotice, TGHHotelVisual } from '@/components';
+import { TGHRoomsGrand } from '@/components/common/TGHRoomsGrand';
+import { TGHRoomsPremium } from '@/components/common/TGHRoomsPremium';
+import { TGHRoomsRoyal } from '@/components/common/TGHRoomsRoyal';
+import { TGHRoomsSelect } from '@/components/common/TGHRoomsSelect';
 
 const RoomService = () => (
   <>
     <section>
-      <TGHHotelHero />
+      <TGHRoomsSelect />
     </section>
     <section>
-      <TGHHotelFeatures />
+      <TGHRoomsPremium />
     </section>
     <section>
-      <TGHHotelVisual />
+      <TGHRoomsGrand />
     </section>
     <section>
-      <TGHHotelDescription />
+      <TGHRoomsRoyal />
     </section>
-    <section>
-      <TGHHotelNotice />
-    </section>
+
+    {/*<section>*/}
+    {/*  <TGHHotelHero />*/}
+    {/*</section>*/}
+    {/*<section>*/}
+    {/*  <TGHHotelFeatures />*/}
+    {/*</section>*/}
+    {/*<section>*/}
+    {/*  <TGHHotelVisual />*/}
+    {/*</section>*/}
+    {/*<section>*/}
+    {/*  <TGHHotelDescription />*/}
+    {/*</section>*/}
+    {/*<section>*/}
+    {/*  <TGHHotelNotice />*/}
+    {/*</section>*/}
   </>
 );
 

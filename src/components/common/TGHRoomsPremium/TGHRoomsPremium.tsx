@@ -1,6 +1,6 @@
-import { Button, Divider, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
+import { Button, Divider, Flex, Group, Image, Stack, Text, Title, UnstyledButton } from '@mantine/core';
 
-import { premiumDeluxe01 } from '@/assets';
+import { arrowButtonLeft, arrowButtonRight, premiumDeluxe01 } from '@/assets';
 
 import styles from './TGHRoomsPremium.module.css';
 
@@ -37,9 +37,13 @@ const TGHRoomsPremium = () => (
               <Text opacity={0.65}>KING</Text>
             </Group>
           </Stack>
-          <Button className={styles.rooms_premium_reserve_btn}>예약하기</Button>
+          <Button className={styles.reserve_btn}>예약하기</Button>
         </Stack>
       </Flex>
+      <UnstyledButton className={styles.arrow_btn}>
+        <Image className={styles.arrow_btn_left} w="auto" fit="cover" src={arrowButtonLeft.src} alt="이전 화살표" />
+        <Image className={styles.arrow_btn_right} w="auto" fit="cover" src={arrowButtonRight.src} alt="다음 화살표" />
+      </UnstyledButton>
     </Flex>
   </Flex>
 );
