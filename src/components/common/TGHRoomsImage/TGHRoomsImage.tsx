@@ -8,8 +8,8 @@ import {
   roomsGrandDeluxe02,
   roomsPremiumDeluxe01,
   roomsPremiumDeluxe02,
-  royalSuite01,
-  royalSuite02,
+  roomsRoyalSuite01,
+  roomsRoyalSuite02,
 } from '@/assets';
 
 import styles from './TGHRoomsImage.module.css';
@@ -40,8 +40,8 @@ const TGHRoomsImage = () => {
     {
       title: '로열 스위트',
       description: '감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트',
-      leftImgSrc: royalSuite01.src,
-      rightImgSrc: royalSuite02.src,
+      leftImgSrc: roomsRoyalSuite01.src,
+      rightImgSrc: roomsRoyalSuite02.src,
     },
   ];
 
