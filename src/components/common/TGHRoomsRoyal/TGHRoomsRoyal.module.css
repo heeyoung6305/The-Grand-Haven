@@ -1,25 +1,25 @@
-.rooms_grand {
+.rooms_royal {
     background-color: #fffcf6;
     justify-content: center;
     padding: 0 185px 185px 185px;
 }
-.rooms_grand_bg {
+.rooms_royal_bg {
     width: 1550px;
     height: 600px;
     border: 1px solid rgba(157, 131, 90, 0.25);
 }
-.rooms_grand_details {
+.rooms_royal_details {
     padding: 58px 45px 45px 45px;
 
 }
-.rooms_grand_title_a {
+.rooms_royal_title_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #191919;
     padding-bottom: 4px;
 }
-.rooms_grand_description_a {
+.rooms_royal_description_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -27,20 +27,20 @@
     opacity: 0.8;
     padding-bottom: 27px;
 }
-.rooms_grand_title_b {
+.rooms_royal_title_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #9d835a;
 }
-.rooms_grand_description_b {
+.rooms_royal_description_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #9d835a;
     line-height: 28px;
 }
-.rooms_grand_text {
+.rooms_royal_text {
     > p {
         font-family: "Noto Sans KR", sans-serif;
         font-size: 15px;
@@ -49,7 +49,7 @@
     }
 }
 
-.rooms_grand_reserve_btn {
+.rooms_royal_reserve_btn {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -61,7 +61,7 @@
     height: 40px;
     transition: all 0.25s ease;
 }
-.rooms_grand_reserve_btn:hover {
+.rooms_royal_reserve_btn:hover {
     color: #fffcf6;
     background-color: #9d835a;
 }

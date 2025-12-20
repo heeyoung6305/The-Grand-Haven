@@ -1,20 +1,20 @@
-.rooms_deluxe_bg {
+.rooms_premium_bg {
     width: 1550px;
     height: 600px;
     border: 1px solid rgba(157, 131, 90, 0.25);
 }
-.rooms_deluxe_details {
+.rooms_premium_details {
     padding: 58px 45px 45px 45px;
 
 }
-.rooms_deluxe_title_a {
+.rooms_premium_title_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #191919;
     padding-bottom: 4px;
 }
-.rooms_deluxe_description_a {
+.rooms_premium_description_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -22,20 +22,20 @@
     opacity: 0.8;
     padding-bottom: 27px;
 }
-.rooms_deluxe_title_b {
+.rooms_premium_title_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #9d835a;
 }
-.rooms_deluxe_description_b {
+.rooms_premium_description_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #9d835a;
     line-height: 28px;
 }
-.rooms_deluxe_text {
+.rooms_premium_text {
     > p {
         font-family: "Noto Sans KR", sans-serif;
         font-size: 15px;
@@ -44,7 +44,7 @@
     }
 }
 
-.rooms_deluxe_reserve_btn {
+.rooms_premium_reserve_btn {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -56,7 +56,7 @@
     height: 40px;
     transition: all 0.25s ease;
 }
-.rooms_deluxe_reserve_btn:hover {
+.rooms_premium_reserve_btn:hover {
     color: #fffcf6;
     background-color: #9d835a;
 }

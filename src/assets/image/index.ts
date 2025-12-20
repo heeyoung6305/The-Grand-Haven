@@ -53,7 +53,7 @@ import roomsGrandDeluxe02 from './rooms_grand_deluxe_suite02.svg';
 import roomsPremiumDeluxe01 from './rooms_premium_deluxe01.svg';
 import roomsPremiumDeluxe02 from './rooms_premium_deluxe02.svg';
 import roomsRoyalSuite01 from './rooms_royal_suite01.svg';
-import roomsroyalSuite02 from './rooms_royal_suite02.svg';
+import roomsRoyalSuite02 from './rooms_royal_suite02.svg';
 import royalSuite01 from './royal_Suite01.svg';
 import royalSuite02 from './royal_Suite02.svg';
 import royalSuite03 from './royal_Suite03.svg';
@@ -71,7 +71,7 @@ export {
   roomsPremiumDeluxe01,
   roomsPremiumDeluxe02,
   roomsRoyalSuite01,
-  roomsroyalSuite02,
+  roomsRoyalSuite02,
   roomsArrowButton,
   ourFacilitiesLeft,
   ourFacilitiesRight,

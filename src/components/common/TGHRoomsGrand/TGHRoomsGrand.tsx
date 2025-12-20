@@ -5,7 +5,7 @@ import { grandDeluxeSuite01 } from '@/assets';
 import styles from './TGHRoomsGrand.module.css';
 
 const TGHRoomsGrand = () => (
-  <Flex bg={'#fffcf6'} p={185} justify={'center'}>
+  <Flex className={styles.rooms_grand}>
     <Flex direction={'column'}>
       <Title className={styles.rooms_grand_title_a}>그랜드 디럭스 스위트</Title>
       <Text className={styles.rooms_grand_description_a}>
@@ -18,15 +18,15 @@ const TGHRoomsGrand = () => (
         <Stack className={styles.rooms_grand_details}>
           <Title className={styles.rooms_grand_title_b}>그랜드 디럭스 스위트</Title>
           <Text className={styles.rooms_grand_description_b}>
-            큰 창으로 들어오는 빛과 여유롭게 펼쳐진 공간이
+            은은한 조명과 깊이 있는 색감 속에서 공간의
             <br />
-            어우러져 하루의 흐름이 편안해지는 프리미엄 디럭스
+            결을 천천히 느끼게 되는 그랜드 디럭스 스위트
           </Text>
-          <Divider my="md" color="#9d835a" opacity={0.25} />
+          <Divider w={410} my="md" color="#9d835a" opacity={0.25} />
           <Stack pb={165}>
             <Group className={styles.rooms_grand_text}>
               <Text>면적</Text>
-              <Text opacity={0.65}>45㎡</Text>
+              <Text opacity={0.65}>68㎡</Text>
             </Group>
             <Group className={styles.rooms_grand_text}>
               <Text>인원</Text>
