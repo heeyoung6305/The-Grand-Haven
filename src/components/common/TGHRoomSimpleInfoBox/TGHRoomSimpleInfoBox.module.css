@@ -1,25 +1,20 @@
-.rooms_grand {
-    background-color: #fffcf6;
-    justify-content: center;
-    padding: 0 185px 185px 185px;
-}
-.rooms_grand_bg {
+.rooms_premium_bg {
     width: 1550px;
     height: 600px;
     border: 1px solid rgba(157, 131, 90, 0.25);
 }
-.rooms_grand_details {
+.rooms_premium_details {
     padding: 58px 45px 45px 45px;
 
 }
-.rooms_grand_title_a {
+.rooms_premium_title_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #191919;
     padding-bottom: 4px;
 }
-.rooms_grand_description_a {
+.rooms_premium_description_a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -27,20 +22,20 @@
     opacity: 0.8;
     padding-bottom: 27px;
 }
-.rooms_grand_title_b {
+.rooms_premium_title_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #9d835a;
 }
-.rooms_grand_description_b {
+.rooms_premium_description_b {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #9d835a;
     line-height: 28px;
 }
-.rooms_grand_text {
+.rooms_premium_text {
     > p {
         font-family: "Noto Sans KR", sans-serif;
         font-size: 15px;
@@ -73,10 +68,24 @@
 .arrow_btn_left {
     position: relative;
     left: -65px;
-    top: -32px;
 }
 .arrow_btn_right {
     position: relative;
     left: 65px;
-    top: -32px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9d835a;
+    opacity: 0.3;
+}
+
+.indicator_active {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9d835a;
+    opacity: 1;
 }

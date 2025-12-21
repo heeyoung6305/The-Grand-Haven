@@ -7,10 +7,16 @@ import styles from './TGHHotelDescription.module.css';
 
 const TGHHotelDescription = () => (
   <Flex className={styles.hotel_description} bg={'#fffcf6'}>
-    <Image className={styles.hotel_description_background_img} w="auto" fit="none" src={hotelDescriptionLabel.src} />
+    <Image
+      className={styles.hotel_description_background_img}
+      w="auto"
+      fit="none"
+      src={hotelDescriptionLabel.src}
+      alt={''}
+    />
     <Flex className={styles.hotel_description_img}>
-      <Image radius="none" w="auto" fit="none" src={hotelDescription01.src} />
-      <Image radius="none" w="auto" fit="none" src={hotelDescription012.src} />
+      <Image radius="none" w="auto" fit="none" src={hotelDescription01.src} alt={''} />
+      <Image radius="none" w="auto" fit="none" src={hotelDescription012.src} alt={''} />
     </Flex>
     <TGHHotelDescriptionText />
   </Flex>

@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
+import '@mantine/carousel/styles.css';
 import { MainStoreProvider, UIProvider } from '@/providers';
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ const RootLayout = ({
         dangerouslySetInnerHTML={{
           __html: `
           (function() {
-            function setViewPort() {
+            function setViewPort() { 
               const targetWidth = 1920;
               const deviceWidth = window.outerWidth;
               const deviceHeight = window.outerHeight;

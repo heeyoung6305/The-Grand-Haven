@@ -7,7 +7,7 @@ const TGHHotelVisual = () => (
   <Box className={styles.hotel_visual} bg={'#fffcf6'}>
     <Flex className={styles.hotel_visual_main}>
       <Text>Premier Standard</Text>
-      <Image radius="none" w="auto" fit="none" src={hotelVisual01.src} />
+      <Image radius="none" w="auto" fit="none" src={hotelVisual01.src} alt={''} />
     </Flex>
   </Box>
 );
