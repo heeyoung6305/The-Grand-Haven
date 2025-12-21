@@ -9,11 +9,13 @@ import {
   royalSuite02,
   royalSuite03,
 } from '@/assets';
+import { HotelReservationEnum } from '@/enums';
 
 import type { ITGHRoomSimpleInfo } from '@/types';
 
 const ROOM_SIMPLE_INFO_BOX_DATA: ITGHRoomSimpleInfo[] = [
   {
+    id: HotelReservationEnum.PREMIUM_DELUXE,
     title: '프리미엄 디럭스',
     description: '한층 여유로운 공간과 세련된 인테리어가 어우러진 프리미엄 디럭스 객실',
     imgData: [premiumDeluxe01, premiumDeluxe02, premiumDeluxe03],
@@ -25,6 +27,7 @@ const ROOM_SIMPLE_INFO_BOX_DATA: ITGHRoomSimpleInfo[] = [
     bedType: 'KING',
   },
   {
+    id: HotelReservationEnum.GRAND_DELUXE,
     title: '그랜드 디럭스 스위트',
     description: '클래식한 감성과 이국적인 신비로움이 가득한 그랜드 디럭스 스위트 객실',
     imgData: [grandDeluxeSuite01, grandDeluxeSuite02, grandDeluxeSuite03],
@@ -35,6 +38,7 @@ const ROOM_SIMPLE_INFO_BOX_DATA: ITGHRoomSimpleInfo[] = [
     bedType: 'KING / TWIN',
   },
   {
+    id: HotelReservationEnum.ROYAL_SUIT,
     title: '로열 스위트',
     description: '감탄을 자아내는 고급스러운 인테리어와 왕실의 기품이 흐르는 우아한 로열 스위트 객실',
     imgData: [royalSuite01, royalSuite02, royalSuite03],

@@ -1,10 +1,11 @@
 import { Flex, List } from '@mantine/core';
+import { useRouter } from 'next/navigation';
 
 import { SERVICE_MENU_DATA } from '@/assets/data';
 import { ServiceMenuEnum } from '@/enums';
 import { useMainStore } from '@/providers';
 
-import type { ITGHMenuNav, ITGHServiceMenuProps } from '@/types';
+import type { ITGHMenuNav } from '@/types';
 
 import styles from './TGHServiceMenu.module.css';
 
@@ -12,9 +13,9 @@ import styles from './TGHServiceMenu.module.css';
  * TGH 서비스 메뉴 컴포넌트
  * @constructor
  */
-const TGHServiceMenu = ({ router }: ITGHServiceMenuProps) => {
+const TGHServiceMenu = () => {
   const { setServiceId } = useMainStore((state) => state);
-
+  const router = useRouter();
   /**
    * 메뉴 별 클릭 시 routing 및 스크롤 처리
    * @param menu

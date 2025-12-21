@@ -15,22 +15,6 @@ const RoomService = () => {
           <TGHRoomSimpleInfoBox data={data} />
         </section>
       ))}
-
-      {/*<section>*/}
-      {/*  <TGHHotelHero />*/}
-      {/*</section>*/}
-      {/*<section>*/}
-      {/*  <TGHHotelFeatures />*/}
-      {/*</section>*/}
-      {/*<section>*/}
-      {/*  <TGHHotelVisual />*/}
-      {/*</section>*/}
-      {/*<section>*/}
-      {/*  <TGHHotelDescription />*/}
-      {/*</section>*/}
-      {/*<section>*/}
-      {/*  <TGHHotelNotice />*/}
-      {/*</section>*/}
     </>
   );
 };

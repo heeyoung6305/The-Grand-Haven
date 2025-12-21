@@ -2,20 +2,20 @@
 import { Container } from '@mantine/core';
 
 import { TGHFooter, TGHSubMenu } from '@/components';
-import { ServicePage } from '@/features';
+import { ReservationPage } from '@/features';
 import { useMainStore } from '@/providers';
 
-const Service = () => {
-  const { serviceId } = useMainStore((state) => state);
+const Reservation = () => {
+  const { reservationId } = useMainStore((state) => state);
   return (
     <>
       <TGHSubMenu />
       <Container size={1920} p={0}>
-        <ServicePage serviceId={serviceId} />
+        <ReservationPage reservationId={reservationId} />
       </Container>
       <TGHFooter />
     </>
   );
 };
 
-export default Service;
+export default Reservation;
