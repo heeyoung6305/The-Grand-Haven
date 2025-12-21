@@ -1,6 +1,9 @@
 import { StaticImageData } from 'next/image';
 
+import { HotelReservationEnum } from '@/enums';
+
 export interface ITGHRoomSimpleInfo {
+  id: HotelReservationEnum;
   title: string;
   description: string;
   imgData: StaticImageData[];

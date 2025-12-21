@@ -1,18 +1,29 @@
+'use client';
 import { useState } from 'react';
 
 import { Carousel } from '@mantine/carousel';
 import { Button, Divider, Flex, Group, Image, Stack, Text, Title, UnstyledButton } from '@mantine/core';
 import { EmblaCarouselType } from 'embla-carousel';
+import { useRouter } from 'next/navigation';
 
 import { arrowButtonLeft, arrowButtonRight } from '@/assets';
+import { HotelReservationEnum } from '@/enums';
+import { useMainStore } from '@/providers';
 
 import type { ITGHRoomSimpleInfoBoxProps } from '@/types';
 
 import styles from './TGHRoomSimpleInfoBox.module.css';
 
 const TGHRoomSimpleInfoBox = ({ data }: ITGHRoomSimpleInfoBoxProps) => {
+  const router = useRouter();
+  const { setReservationId } = useMainStore((state) => state);
   const [active, setActive] = useState(0);
   const [embla, setEmbla] = useState<EmblaCarouselType | null>(null);
+  const handleClickReservationButton = (value: HotelReservationEnum) => {
+    setReservationId(value);
+    router.push('/reservation');
+  };
+
   return (
     <Flex bg={'#fffcf6'} p={185} justify={'center'}>
       <Flex direction={'column'}>
@@ -51,7 +62,9 @@ const TGHRoomSimpleInfoBox = ({ data }: ITGHRoomSimpleInfoBoxProps) => {
                 <Text opacity={0.65}>{data.bedType}</Text>
               </Group>
             </Stack>
-            <Button className={styles.reserve_btn}>예약하기</Button>
+            <Button className={styles.reserve_btn} onClick={() => handleClickReservationButton(data.id)}>
+              예약하기
+            </Button>
           </Stack>
         </Flex>
         <Flex justify={'space-between'} h={115}>
