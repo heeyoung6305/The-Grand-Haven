@@ -25,35 +25,35 @@ const TGHArtCollGallery = () => (
         </Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection03.src} />
+        <Image w="auto" fit="cover" src={artCollection03.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Between Red - 016NOV</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection04.src} />
+        <Image w="auto" fit="cover" src={artCollection04.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Eastern Celebrity & Western Celebrity 15</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection05.src} />
+        <Image w="auto" fit="cover" src={artCollection05.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Golden Legend</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection06.src} />
+        <Image w="auto" fit="cover" src={artCollection06.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>The Surfer</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection07.src} />
+        <Image w="auto" fit="cover" src={artCollection07.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>USQUAM NUSQUAM</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection08.src} />
+        <Image w="auto" fit="cover" src={artCollection08.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Paradise Lost I - IV Between Urras and Anarres</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection09.src} />
+        <Image w="auto" fit="cover" src={artCollection09.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Continental Splash</Text>
       </Grid.Col>
       <Grid.Col span={4} className={styles.artcoll_gallery_image}>
-        <Image w="auto" fit="cover" src={artCollection10.src} />
+        <Image w="auto" fit="cover" src={artCollection10.src} alt={''} />
         <Text className={styles.artcoll_gallery_text}>Coexistence</Text>
       </Grid.Col>
     </Grid>

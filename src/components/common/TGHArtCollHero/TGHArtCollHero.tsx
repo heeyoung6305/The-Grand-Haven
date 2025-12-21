@@ -7,7 +7,7 @@ import styles from '@/components/common/TGHArtCollHero/TGHArtCollHero.module.css
 const TGHArtCollHero = () => (
   <Box className={styles.artcoll_hero}>
     <Flex className={styles.artcoll_hero_image}>
-      <Image radius="none" w="auto" fit="none" src={artCollection01.src} />
+      <Image radius="none" w="auto" fit="none" src={artCollection01.src} alt={''} />
       <Text className={styles.artcoll_hero_text}>Variation, Tranquility</Text>
     </Flex>
     <TGHArtCollGallery />

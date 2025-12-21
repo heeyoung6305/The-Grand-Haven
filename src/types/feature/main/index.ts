@@ -1,1 +1,1 @@
-export type * from './IMainPageProps';
+// export type * from './IMainPageProps';

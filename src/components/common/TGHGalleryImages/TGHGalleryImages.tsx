@@ -8,13 +8,13 @@ const TGHGalleryImages = () => (
   <Box bg={'#ede9e4'} px={30}>
     <Flex className={styles.gallery_box}>
       <Box className={styles.gallery_image_box01}>
-        <Image radius="none" w="auto" fit="none" src={gallery01.src} />
-        <Image radius="none" w="auto" fit="none" src={gallery04.src} />
+        <Image radius="none" w="auto" fit="none" src={gallery01.src} alt={''} />
+        <Image radius="none" w="auto" fit="none" src={gallery04.src} alt={''} />
       </Box>
       <TGHGallery />
       <Box className={styles.gallery_image_box02}>
-        <Image radius="none" w="auto" fit="none" src={gallery03.src} />
-        <Image radius="none" w="auto" fit="none" src={gallery05.src} />
+        <Image radius="none" w="auto" fit="none" src={gallery03.src} alt={''} />
+        <Image radius="none" w="auto" fit="none" src={gallery05.src} alt={''} />
       </Box>
     </Flex>
     <Text className={styles.gallery_text_highlight}>

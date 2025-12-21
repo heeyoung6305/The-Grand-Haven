@@ -26,7 +26,7 @@ const TGHLocation = () => (
         <Divider my="xl" opacity={0.4} size="3px" />
       </Flex>
     </Box>
-    <Image pt={220} radius="none" w={960} fit="cover" src={Map.src} />
+    <Image pt={220} radius="none" w={960} fit="cover" src={Map.src} alt={''} />
   </Flex>
 );
 

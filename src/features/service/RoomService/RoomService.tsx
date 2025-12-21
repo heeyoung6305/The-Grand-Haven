@@ -1,39 +1,38 @@
-import { TGHRoomsGrand } from '@/components/common/TGHRoomsGrand';
-import { TGHRoomsPremium } from '@/components/common/TGHRoomsPremium';
-import { TGHRoomsRoyal } from '@/components/common/TGHRoomsRoyal';
+import { ROOM_SIMPLE_INFO_BOX_DATA } from '@/assets/data';
+import { TGHRoomSimpleInfoBox } from '@/components';
 import { TGHRoomsSelect } from '@/components/common/TGHRoomsSelect';
 
-const RoomService = () => (
-  <>
-    <section>
-      <TGHRoomsSelect />
-    </section>
-    <section>
-      <TGHRoomsPremium />
-    </section>
-    <section>
-      <TGHRoomsGrand />
-    </section>
-    <section>
-      <TGHRoomsRoyal />
-    </section>
+const RoomService = () => {
+  console.log('room test');
 
-    {/*<section>*/}
-    {/*  <TGHHotelHero />*/}
-    {/*</section>*/}
-    {/*<section>*/}
-    {/*  <TGHHotelFeatures />*/}
-    {/*</section>*/}
-    {/*<section>*/}
-    {/*  <TGHHotelVisual />*/}
-    {/*</section>*/}
-    {/*<section>*/}
-    {/*  <TGHHotelDescription />*/}
-    {/*</section>*/}
-    {/*<section>*/}
-    {/*  <TGHHotelNotice />*/}
-    {/*</section>*/}
-  </>
-);
+  return (
+    <>
+      <section>
+        <TGHRoomsSelect />
+      </section>
+      {ROOM_SIMPLE_INFO_BOX_DATA.map((data, index) => (
+        <section key={`${data.title}_${index}`}>
+          <TGHRoomSimpleInfoBox data={data} />
+        </section>
+      ))}
+
+      {/*<section>*/}
+      {/*  <TGHHotelHero />*/}
+      {/*</section>*/}
+      {/*<section>*/}
+      {/*  <TGHHotelFeatures />*/}
+      {/*</section>*/}
+      {/*<section>*/}
+      {/*  <TGHHotelVisual />*/}
+      {/*</section>*/}
+      {/*<section>*/}
+      {/*  <TGHHotelDescription />*/}
+      {/*</section>*/}
+      {/*<section>*/}
+      {/*  <TGHHotelNotice />*/}
+      {/*</section>*/}
+    </>
+  );
+};
 
 export default RoomService;
