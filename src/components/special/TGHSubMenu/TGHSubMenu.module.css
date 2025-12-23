@@ -1,12 +1,20 @@
-.sub_header_title {
-    font-family: "albertusNova";
-    color: #191919;
-    font-size: 30px;
-}
-.sub_header_text {
+.sub_header {
+    gap: 70px;
+    width: 1920px;
+    height: 104px;
+    background-color: #ede9e4;
+    align-items: center;
+    cursor: pointer;
     > p {
         font-family: "helveticaNeue";
         font-size: 24px;
         color: #191919;
     }
+}
+.sub_header_title {
+    font-family: "albertusNova";
+    font-weight: 400;
+    color: #191919;
+    font-size: 30px;
+    padding-right: 170px;
 }

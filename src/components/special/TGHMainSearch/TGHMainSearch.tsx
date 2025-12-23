@@ -14,7 +14,7 @@ const TGHMainSearch = () => {
     <Box bg={'#ede9e4'} px={30}>
       <BackgroundImage className={styles.tgh_main_search_background_img} src={mainImg.src}>
         <Flex className={styles.tgh_main_search_background_img_flex}>
-          <TGHSearchInfoForm title={'체크인 / 체크아웃'} info={'2025. 11. 01 - 2025. 11. 02'} />
+          <TGHSearchInfoForm title={'체크인 / 체크아웃'} info={'2026. 01. 01 - 2026. 01. 02'} />
           <Divider className={styles.tgh_main_search_divider} orientation="vertical" size={3} />
           <TGHSearchInfoForm
             title={'객실 및 인원'}
