@@ -11,6 +11,7 @@ import artCollection07 from './artCollection07.svg';
 import artCollection08 from './artCollection08.svg';
 import artCollection09 from './artCollection09.svg';
 import artCollection10 from './artCollection10.svg';
+import closeButton from './close_button.svg';
 import dining01 from './dining01.svg';
 import dining02 from './dining02.svg';
 import dining03 from './dining03.svg';
@@ -126,4 +127,5 @@ export {
   premiumDeluxe03,
   arrowButtonLeft,
   arrowButtonRight,
+  closeButton,
 };
