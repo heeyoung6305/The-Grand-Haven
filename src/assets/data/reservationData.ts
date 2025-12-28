@@ -1,6 +1,19 @@
-import { hotelHero01, hotelHero02, hotelHero03 } from '@/assets';
+import {
+  hotelDescription01,
+  hotelDescription012,
+  hotelDescription02,
+  hotelDescription022,
+  hotelDescription03,
+  hotelDescription032,
+  hotelHero01,
+  hotelHero02,
+  hotelHero03,
+  hotelVisual01,
+  hotelVisual02,
+  hotelVisual03,
+} from '@/assets';
 import { HotelReservationEnum } from '@/enums';
-import { IHotelHeroInfo } from '@/types/common/ITGHHotelHeroProps';
+import { IHotelDescriptionInfo, IHotelHeroInfo, IHotelVisualInfo } from '@/types/common/ITGHHotelHeroProps';
 
 const HOTEL_HERO_MAP: Record<HotelReservationEnum, IHotelHeroInfo> = {
   [HotelReservationEnum.PREMIUM_DELUXE]: {
@@ -20,4 +33,25 @@ const HOTEL_HERO_MAP: Record<HotelReservationEnum, IHotelHeroInfo> = {
   },
 };
 
-export { HOTEL_HERO_MAP };
+const HOTEL_VISUAL_MAP: Record<HotelReservationEnum, IHotelVisualInfo> = {
+  [HotelReservationEnum.PREMIUM_DELUXE]: { imgData: hotelVisual01 },
+  [HotelReservationEnum.GRAND_DELUXE]: { imgData: hotelVisual02 },
+  [HotelReservationEnum.ROYAL_SUIT]: { imgData: hotelVisual03 },
+};
+
+const HOTEL_DESCRIPTION_MAP: Record<HotelReservationEnum, IHotelDescriptionInfo> = {
+  [HotelReservationEnum.PREMIUM_DELUXE]: {
+    descImgData1: hotelDescription01,
+    descImgData2: hotelDescription012,
+  },
+  [HotelReservationEnum.GRAND_DELUXE]: {
+    descImgData1: hotelDescription02,
+    descImgData2: hotelDescription022,
+  },
+  [HotelReservationEnum.ROYAL_SUIT]: {
+    descImgData1: hotelDescription03,
+    descImgData2: hotelDescription032,
+  },
+};
+
+export { HOTEL_HERO_MAP, HOTEL_VISUAL_MAP, HOTEL_DESCRIPTION_MAP };
