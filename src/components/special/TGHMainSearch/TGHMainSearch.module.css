@@ -38,3 +38,10 @@
   align-self: center;
   opacity: 24%;
 }
+
+.date_dropdown,
+.room_dropdown {
+  padding: 32px;
+  background: rgba(130, 150, 155, 0.85);
+  backdrop-filter: blur(6px);
+}
