@@ -5,11 +5,6 @@
     background-color: #ede9e4;
     align-items: center;
     cursor: pointer;
-    > p {
-        font-family: "helveticaNeue";
-        font-size: 24px;
-        color: #191919;
-    }
 }
 .sub_header_title {
     font-family: "albertusNova";
@@ -17,4 +12,14 @@
     color: #191919;
     font-size: 30px;
     padding-right: 170px;
+    &:hover {
+        backgroundColor: 'transparent';
+        color: #191919;
+    }
+}
+
+.sub_header_menu_list {
+    font-family: "helveticaNeue";
+    font-size: 24px;
+    color: #191919;
 }
