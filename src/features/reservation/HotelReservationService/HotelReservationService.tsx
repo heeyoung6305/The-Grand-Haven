@@ -1,18 +1,22 @@
 import { TGHHotelDescription, TGHHotelFeatures, TGHHotelHero, TGHHotelNotice, TGHHotelVisual } from '@/components';
+import { HotelReservationEnum } from '@/enums';
 
-const HotelReservationService = () => (
+interface HotelReservationServiceProps {
+  reservationId: HotelReservationEnum;
+}
+const HotelReservationService = ({ reservationId }: HotelReservationServiceProps) => (
   <>
     <section>
-      <TGHHotelHero />
+      <TGHHotelHero reservationId={reservationId} />
     </section>
     <section>
       <TGHHotelFeatures />
     </section>
     <section>
-      <TGHHotelVisual />
+      <TGHHotelVisual reservationId={reservationId} />
     </section>
     <section>
-      <TGHHotelDescription />
+      <TGHHotelDescription reservationId={reservationId} />
     </section>
     <section>
       <TGHHotelNotice />

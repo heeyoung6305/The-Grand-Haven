@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
 import '@mantine/carousel/styles.css';
+import { AlbertusNova, HelveticaNeue } from '@/assets/css/font';
 import { MainStoreProvider, UIProvider } from '@/providers';
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ const RootLayout = ({
       />
       <title />
     </head>
-    <body>
+    <body className={`${AlbertusNova.className} ${HelveticaNeue.className}`}>
       <UIProvider>
         <MainStoreProvider>{children}</MainStoreProvider>
       </UIProvider>

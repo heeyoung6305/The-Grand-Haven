@@ -14,7 +14,7 @@
     "@mantine/dates": "8.3.6",
     "@mantine/hooks": "8.3.5",
     "dayjs": "1.11.19",
-    "embla-carousel-react": "^8.6.0",
+    "embla-carousel-react": "8.6.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
