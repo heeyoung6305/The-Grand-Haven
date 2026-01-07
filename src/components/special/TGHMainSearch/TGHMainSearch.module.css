@@ -1,30 +1,30 @@
 .tgh_main_search_background_img {
-  height: 781px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 143px;
+    height: 781px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 143px 0 273px 0;
 }
 
 .tgh_main_search_background_img_flex {
-  width: 836px;
-  height: 150px;
-  background-color: #313F387A;
-  backdrop-filter: blur(10px);
-  opacity: 90%;
-  justify-content: space-evenly;
-  align-items: center;
+    width: 836px;
+    height: 150px;
+    background-color: #313F387A;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .tgh_main_search_btn {
-  width: 370px;
-  height: 150px;
-  color: #fffcf6;
-  background-color: #9d835a;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 20px;
-  border-radius: 0;
+    width: 370px;
+    height: 150px;
+    color: #fffcf6;
+    background-color: #9d835a;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 0;
 
   &:hover {
     color: #fffcf6;
@@ -33,10 +33,10 @@
 }
 
 .tgh_main_search_divider {
-  height: 95px;
-  background-color: #fffcf6;
-  align-self: center;
-  opacity: 24%;
+    height: 95px;
+    background-color: #fffcf6;
+    align-self: center;
+    opacity: 0.24;
 }
 
 .date_dropdown,
