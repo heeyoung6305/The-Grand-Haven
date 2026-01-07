@@ -6,6 +6,7 @@
 
 .about_title {
     font-family: "albertusNova";
+    font-weight: 400;
     color: #9d835a;
     display: flex;
     text-align: right;
