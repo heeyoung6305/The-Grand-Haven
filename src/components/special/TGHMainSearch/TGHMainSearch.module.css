@@ -9,7 +9,7 @@
 .tgh_main_search_background_img_flex {
     width: 836px;
     height: 150px;
-    background-color: #313F387A;
+    background-color: rgba(49, 63, 56, 0.48);
     backdrop-filter: blur(10px);
     opacity: 0.9;
     justify-content: space-evenly;
@@ -41,7 +41,14 @@
 
 .date_dropdown,
 .room_dropdown {
-  padding: 32px;
-  background: rgba(130, 150, 155, 0.85);
-  backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background-color: rgba(49, 63, 56, 0.48);
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
 }

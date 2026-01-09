@@ -120,7 +120,7 @@ const TGHMainSearch = () => {
                       }
                     }}
                     numberOfColumns={2}
-                    size="lg"
+                    size="xl"
                     firstDayOfWeek={0}
                   />
                 </Flex>
