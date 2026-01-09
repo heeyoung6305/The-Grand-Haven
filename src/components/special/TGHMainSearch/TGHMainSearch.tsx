@@ -1,17 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import {
-  ActionIcon,
-  BackgroundImage,
-  Box,
-  CloseButton,
-  Divider,
-  Flex,
-  Group,
-  Popover,
-  Stack,
-  Text,
-} from '@mantine/core';
+import { ActionIcon, BackgroundImage, Box, Divider, Flex, Group, Popover, Stack, Text } from '@mantine/core';
 import { DatePicker } from '@mantine/dates';
 import { useDisclosure } from '@mantine/hooks';
 
@@ -55,11 +44,20 @@ type ActivePanel = 'date' | 'room' | null;
 const TGHMainSearch = () => {
   const [popoverOpened, popoverOpenHook] = useDisclosure(false);
   const [activePanel, setActivePanel] = useState<ActivePanel>(null);
+  const [confirmedRange, setConfirmedRange] = useState<[Date, Date] | null>(null);
   const [range, setRange] = useState<[Date | null, Date | null]>([null, null]);
   const [roomInfo, setRoomInfo] = useState({
     adult: 0,
     child: 0,
   });
+
+  useEffect(() => {
+    const today = new Date();
+    const tomorrow = new Date();
+    tomorrow.setDate(today.getDate() + 1);
+    setConfirmedRange([today, tomorrow]);
+    setRange([today, tomorrow]);
+  }, []);
 
   return (
     <Box bg="#ede9e4" px={30}>
@@ -68,7 +66,7 @@ const TGHMainSearch = () => {
           <Popover
             opened={popoverOpened}
             onClose={() => {
-              close();
+              popoverOpenHook.close();
               setActivePanel(null);
             }}
             position="bottom"
@@ -82,9 +80,9 @@ const TGHMainSearch = () => {
                 <TGHSearchInfoForm
                   title="체크인 / 체크아웃"
                   info={
-                    range[0] && range[1]
-                      ? `${range[0].toLocaleDateString('ko-KR')} - ${range[1].toLocaleDateString('ko-KR')}`
-                      : '날짜 선택'
+                    confirmedRange
+                      ? `${confirmedRange[0].toLocaleDateString('ko-KR')} - ${confirmedRange[1].toLocaleDateString('ko-KR')}`
+                      : ''
                   }
                   onClick={() => {
                     setActivePanel('date');
@@ -109,16 +107,24 @@ const TGHMainSearch = () => {
                   <DatePicker
                     type="range"
                     value={range}
-                    onChange={(value) =>
-                      setRange([value?.[0] ? new Date(value[0]) : null, value?.[1] ? new Date(value[1]) : null])
-                    }
+                    onChange={(value) => {
+                      if (!Array.isArray(value)) return;
+                      const [start, end] = value;
+                      const startDate = start instanceof Date ? start : start ? new Date(start) : null;
+                      const endDate = end instanceof Date ? end : end ? new Date(end) : null;
+                      setRange([startDate, endDate]);
+                      if (startDate && endDate) {
+                        setConfirmedRange([startDate, endDate]);
+                        popoverOpenHook.close();
+                        setActivePanel(null);
+                      }
+                    }}
                     numberOfColumns={2}
                     size="lg"
+                    firstDayOfWeek={0}
                   />
-                  <CloseButton variant={'transparent'} onClick={() => popoverOpenHook.close()} />
                 </Flex>
               )}
-
               {activePanel === 'room' && (
                 <Box>
                   <Stack gap="lg">
