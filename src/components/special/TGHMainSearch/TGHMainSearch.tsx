@@ -42,10 +42,15 @@ const CounterRow = ({ label, value, min = 0, onChange }: CounterRowProps) => {
 type ActivePanel = 'date' | 'room' | null;
 
 const TGHMainSearch = () => {
+  /** Popover open state */
   const [popoverOpened, popoverOpenHook] = useDisclosure(false);
+  /** 체크인/아웃 or 객실/인원 선택 값 state */
   const [activePanel, setActivePanel] = useState<ActivePanel>(null);
+  /** 체크인/아웃 최종 state */
   const [confirmedRange, setConfirmedRange] = useState<[Date, Date] | null>(null);
+  /** date-picker 체크인/아웃 state */
   const [range, setRange] = useState<[Date | null, Date | null]>([null, null]);
+  /** 객실 인원 state */
   const [roomInfo, setRoomInfo] = useState({
     adult: 0,
     child: 0,
@@ -65,13 +70,14 @@ const TGHMainSearch = () => {
         <BackgroundImage className={styles.tgh_main_search_background_img} src={mainImg.src}>
           <Popover
             opened={popoverOpened}
-            onClose={() => {
-              popoverOpenHook.close();
+            onDismiss={() => {
               setActivePanel(null);
+              popoverOpenHook.close();
             }}
             position="bottom"
             offset={10}
-            withinPortal={false}
+            closeOnClickOutside
+            closeOnEscape
             width="target"
           >
             <Popover.Target>
@@ -108,11 +114,15 @@ const TGHMainSearch = () => {
                     type="range"
                     value={range}
                     onChange={(value) => {
-                      if (!Array.isArray(value)) return;
+                      if (!value) return;
+
                       const [start, end] = value;
-                      const startDate = start instanceof Date ? start : start ? new Date(start) : null;
-                      const endDate = end instanceof Date ? end : end ? new Date(end) : null;
+
+                      const startDate = start ? new Date(start) : null;
+                      const endDate = end ? new Date(end) : null;
+
                       setRange([startDate, endDate]);
+
                       if (startDate && endDate) {
                         setConfirmedRange([startDate, endDate]);
                         popoverOpenHook.close();
@@ -122,6 +132,7 @@ const TGHMainSearch = () => {
                     numberOfColumns={2}
                     size="xl"
                     firstDayOfWeek={0}
+                    minDate={new Date()}
                   />
                 </Flex>
               )}

@@ -24,8 +24,8 @@ const TGHHotelDescription = ({ reservationId }: ITGHHotelDescriptionProps) => {
         alt={''}
       />
       <Flex className={styles.hotel_description_img}>
-        <Image radius="none" w="auto" fit="none" src={desc.descImgData1.src} alt={''} />
-        <Image radius="none" w="auto" fit="none" src={desc.descImgData2.src} alt={''} />
+        <Image radius="none" w="auto" fit="none" src={desc.descImgData1?.src ?? ''} alt={''} />
+        <Image radius="none" w="auto" fit="none" src={desc.descImgData2?.src ?? ''} alt={''} />
       </Flex>
       <TGHHotelDescriptionText />
     </Flex>

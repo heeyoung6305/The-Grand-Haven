@@ -16,6 +16,10 @@ import { HotelReservationEnum } from '@/enums';
 import { IHotelDescriptionInfo, IHotelHeroInfo, IHotelVisualInfo } from '@/types/common/ITGHHotelHeroProps';
 
 const HOTEL_HERO_MAP: Record<HotelReservationEnum, IHotelHeroInfo> = {
+  [HotelReservationEnum.DEFAULT]: {
+    title: '',
+    description: '',
+  },
   [HotelReservationEnum.PREMIUM_DELUXE]: {
     imgData: hotelHero01,
     title: 'PREMIUM DELUXE',
@@ -34,12 +38,14 @@ const HOTEL_HERO_MAP: Record<HotelReservationEnum, IHotelHeroInfo> = {
 };
 
 const HOTEL_VISUAL_MAP: Record<HotelReservationEnum, IHotelVisualInfo> = {
+  [HotelReservationEnum.DEFAULT]: {},
   [HotelReservationEnum.PREMIUM_DELUXE]: { imgData: hotelVisual01 },
   [HotelReservationEnum.GRAND_DELUXE]: { imgData: hotelVisual02 },
   [HotelReservationEnum.ROYAL_SUIT]: { imgData: hotelVisual03 },
 };
 
 const HOTEL_DESCRIPTION_MAP: Record<HotelReservationEnum, IHotelDescriptionInfo> = {
+  [HotelReservationEnum.DEFAULT]: {},
   [HotelReservationEnum.PREMIUM_DELUXE]: {
     descImgData1: hotelDescription01,
     descImgData2: hotelDescription012,

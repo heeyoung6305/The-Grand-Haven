@@ -16,7 +16,7 @@ const TGHHotelVisual = ({ reservationId }: ITGHHotelVisualProps) => {
     <Box className={styles.hotel_visual} bg={'#fffcf6'}>
       <Flex className={styles.hotel_visual_main}>
         <Text>Premier Standard</Text>
-        <Image radius="none" w="auto" fit="none" src={visual.imgData.src} alt={''} />
+        <Image radius="none" w="auto" fit="none" src={visual.imgData?.src ?? ''} alt={''} />
       </Flex>
     </Box>
   );

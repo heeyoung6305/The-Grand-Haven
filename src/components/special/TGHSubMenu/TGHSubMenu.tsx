@@ -10,7 +10,7 @@ import type { ITGHMenuNav } from '@/types';
 import styles from './TGHSubMenu.module.css';
 
 const TGHSubMenu = () => {
-  const { setServiceId } = useMainStore((state) => state);
+  const { setMenuId, setServiceId } = useMainStore((state) => state);
   const router = useRouter();
   const handleLogoClick = () => {
     router.push('/');
@@ -30,9 +30,11 @@ const TGHSubMenu = () => {
       setServiceId(menu.link);
       router.push('/service');
     } else {
-      console.log(menu);
+      setMenuId(menu.code);
+      router.push(`/`);
     }
   };
+
   return (
     <Flex className={styles.sub_header} px={30}>
       <Button variant={'transparent'} className={styles.sub_header_title} onClick={handleLogoClick}>

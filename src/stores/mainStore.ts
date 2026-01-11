@@ -1,14 +1,16 @@
 import { devtools, persist } from 'zustand/middleware';
 import { createStore, StoreApi } from 'zustand/vanilla';
 
-import { HotelReservationEnum, ServiceIdEnum } from '@/enums';
+import { HotelReservationEnum, ServiceIdEnum, ServiceMenuEnum } from '@/enums';
 
 /**
  * 메인 전역 상태 정보
  */
 export interface IMainState {
+  menuId?: ServiceMenuEnum;
   /** 선택한 메뉴 정보 */
   serviceId?: ServiceIdEnum;
+  /** 예약정보 */
   reservationId?: HotelReservationEnum;
 }
 
@@ -16,6 +18,7 @@ export interface IMainState {
  * 메인 전역 상태의 함수 정보
  */
 export interface IMainActions {
+  setMenuId: (menuId: ServiceMenuEnum) => void;
   setServiceId: (serviceId: ServiceIdEnum) => void;
   setReservationId: (reservationId: HotelReservationEnum) => void;
   resetMainStore: () => void;
@@ -37,6 +40,7 @@ export const createMainStore = (initState: IMainState = defaultInitMainState): S
       persist(
         (set) => ({
           ...initState,
+          setMenuId: (newMenuId: ServiceMenuEnum) => set((state: IMainStore) => ({ ...state, menuId: newMenuId })),
           setServiceId: (newServiceId: ServiceIdEnum) =>
             set((state: IMainStore) => ({ ...state, serviceId: newServiceId })),
           setReservationId: (newReservationId: HotelReservationEnum) =>
