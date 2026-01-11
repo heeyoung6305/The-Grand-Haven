@@ -30,7 +30,10 @@ const TGHServiceMenu = () => {
       setServiceId(menu.link);
       router.push('/service');
     } else {
-      console.log(menu);
+      const el = document.getElementById(menu.code);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
   return (
