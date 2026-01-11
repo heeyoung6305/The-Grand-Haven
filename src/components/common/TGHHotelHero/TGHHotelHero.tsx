@@ -14,7 +14,7 @@ const TGHHotelHero = ({ reservationId }: ITGHHeroProps) => {
   if (!hero) return null;
   return (
     <Box>
-      <BackgroundImage className={styles.hotel_hero_img} src={hero.imgData.src}>
+      <BackgroundImage className={styles.hotel_hero_img} src={hero.imgData?.src ?? ''}>
         <Flex className={styles.hotel_hero}>
           <Title className={styles.hotel_hero_title}>{hero.title}</Title>
           <Text className={styles.hotel_hero_description}>{hero.description}</Text>

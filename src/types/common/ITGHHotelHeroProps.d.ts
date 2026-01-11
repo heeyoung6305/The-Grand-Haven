@@ -1,16 +1,16 @@
 import { StaticImageData } from 'next/image';
 
 interface IHotelHeroInfo {
-  imgData: StaticImageData;
+  imgData?: StaticImageData;
   title: string;
   description: string;
 }
 
 interface IHotelVisualInfo {
-  imgData: StaticImageData;
+  imgData?: StaticImageData;
 }
 
 interface IHotelDescriptionInfo {
-  descImgData1: StaticImageData;
-  descImgData2: StaticImageData;
+  descImgData1?: StaticImageData;
+  descImgData2?: StaticImageData;
 }
